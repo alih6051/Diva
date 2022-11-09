@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+
+/* footer Term and Condition */
+#top{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+    padding: 40px;
+}
+#top>div{
+    display: flex;
+   
+    gap: 20px;
+   
+}
+h5{
+    font-size: 14px;
+}
+p{
+    font-size: 12px;
+}
+img{
+    margin-top: 10px;
+}
+
+#bottom{
+    background-color: #fc2779;
+
+    padding: 20px;
+    margin: auto;
+}
+#bottom>div:first-child{
+   
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+span{
+    margin: 50px;
+}
+#bottom>div:last-child{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+/* footer_delivery Part */
+#footer-1{
+    background-color: #8C8D94;
+}
+
+#footer_delivery_body{
+    background-color: #8C8D94;
+    color: white;
+}
+
+#footer_delivery{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+   padding: 50px;
+    width: 80%;
+    margin: auto;
+    line-height: 30px;
+    background-color: #8C8D94;
+}
+
+#footer_delivery>div>img{
+    width: 50%;
+    margin-top: -10px;
+}
+
+/* footer_contact Part */
+#footer_contact {
+border: 2px solid red;
+}
