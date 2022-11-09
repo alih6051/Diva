@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/dashboard.css" />
+    <title>Diva Admin</title>
+  </head>
+  <body>
+    <div id="main_container">
+      <div id="lhs">
+        <div id="title_div">
+          <div id="logo">
+            <img src="../assets/logo.png" alt="" />
+          </div>
+          <h4>Diva Admin</h4>
+        </div>
+        <div id="link_div">
+          <div id="products_div" class="link_item link_active">
+            <i class="fa-solid fa-tags"></i>
+            <p>Products</p>
+          </div>
+          <div id="orders_div" class="link_item">
+            <i class="fa-solid fa-indian-rupee-sign"></i>
+            <p>Orders</p>
+          </div>
+          <div id="customers_div" class="link_item">
+            <i class="fa-solid fa-user"></i>
+            <p>Customers</p>
+          </div>
+          <div id="discounts_div" class="link_item">
+            <i class="fa-solid fa-percent"></i>
+            <p>Discounts</p>
+          </div>
+        </div>
+      </div>
+      <div id="rhs">
+        <div id="navbar">
+          <div id="admin_icon_div">H</div>
+        </div>
+        <div id="rhs_body">
+          <div id="products_page" class="page active">
+            <div class="header">
+              <h4>Products</h4>
+              <button id="add_product" class="btn">New Product</button>
+            </div>
+            <div class="action_div">
+              <button class="btn">BTN 1</button>
+              <button class="btn">BTN 1</button>
+              <button class="btn">BTN 1</button>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Inventory</th>
+                  <th>Price</th>
+                  <th>Status</th>
+                  <th>Remove</th>
+                </tr>
+              </thead>
+              <tbody id="product_tbody">
+                <!-- items row comes here -->
+              </tbody>
+            </table>
+          </div>
+          <div id="orders_page" class="page">orders Page</div>
+          <div id="customers_page" class="page">customers Page</div>
+          <div id="discounts_page" class="page">discounts Page</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script type="module" src="./scripts/dashboard.js"></script>
