@@ -1,0 +1,29 @@
+.right-section ul {
+    list-style: none;
+}
+.right-section ul li {
+    display: inline-block;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 13px;
+}
+.right-section ul li a {
+    text-decoration: none;
+    color: #000;
+}
+.top-strip-bg {
+    height: 40px !important;
+    background-size: cover !important;
+    background-color: #fc2779;
+    background-image: url(https://adn-static1.nykaa.com/media/wysiwyg/2021/common-strip.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#offer-banner {
+    height: 40px;
+    line-height: 40px;
+    padding: 0px;
+    position: relative;
+    z-index: 10001 !important;
+}
