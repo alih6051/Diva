@@ -63,10 +63,10 @@ const footer_term=() =>{
    <div id=
    "bottom">
       <div>
-        <span>Terms & Conditions</span>
-        <span>Shipping Policy</span>
-        <span>Cancellation Policy</span>
-        <span>Privacy Policy</span>
+        <span class="footer_span">Terms & Conditions</span>
+        <span class="footer_span">Shipping Policy</span>
+        <span class="footer_span">Cancellation Policy</span>
+        <span class="footer_span">Privacy Policy</span>
         
       </div>
       <div>

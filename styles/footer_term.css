@@ -48,7 +48,7 @@ img{
     text-align: center;
     margin-bottom: 20px;
 }
-span{
+.footer_span{
     margin: 50px;
 }
 #bottom>div:last-child{
