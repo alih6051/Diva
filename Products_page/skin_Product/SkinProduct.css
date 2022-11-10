@@ -30,19 +30,60 @@ body {
 #Products>div{
     
     border-radius: 5px;
-    padding: 20px;
+    padding: 30px 10px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 
 #Products img{
     width: 75%;
+    height: 100px;
 }
 .Pro_Name{
     padding-top: 10px;
     font-size: 15px;
-    
+}
+
+.div_View_btn{
+    /* border: 2px solid red; */
+    width: 50%;
+    margin: auto;
+    height: 5%;
+    margin-top: 20px;
     
 }
+.View_Btn{
+    background-color: #fc2779;
+    border: none;
+    color: white;
+    padding: 5px;
+    
+}
+
+/* .View_Btn:hover{
+  display: 
+} */
+
+
+.div_mid{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 40%;
+}
+
+.div_img{
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 50%;
+}
+
+
+
+
+
+
+
+
+
 /*  */
 *{
  text-align: center;
