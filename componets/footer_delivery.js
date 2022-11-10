@@ -1,58 +1,58 @@
 const  footer_delivery = () =>{
     return ` <div id="footer_delivery">
     <div>
-      <img src="https://files.slack.com/files-pri/T0442LPL56J-F049Z7ALQG2/img_20221108_182823.png">
-      <p>Who are we?</p>
-      <p>Carrers</p>
-      <p>Authenticity</p>
-      <p>Press</p>
-      <p>Testimonials</p>
-      <p>Nykaa CSR</p>
-      <p>Responsible Disclosure</p>
-      <p>Investor Relations</p>
+      <img class="footer-logo" src="./resouces/images/Divalogo.png">
+      <p class="footer-menu">Who are we?</p>
+      <p class="footer-menu">Carrers</p>
+      <p class="footer-menu">Authenticity</p>
+      <p class="footer-menu">Press</p>
+      <p class="footer-menu">Testimonials</p>
+      <p class="footer-menu">Nykaa CSR</p>
+      <p class="footer-menu">Responsible Disclosure</p>
+      <p class="footer-menu">Investor Relations</p>
     </div>
 
     <div>
-        <h5>Help</h5>
-        <p>Contact Us</p>
-        <p>Frequently asked questions</p>
-        <p>Store Locator </p>
-        <p>Cancellation & Return</p>
-        <p>Shipping & Delivery</p>
-        <p>Sell on Nykaa</p>
+        <h5 class="footer-head">Help</h5>
+        <p class="footer-menu">Contact Us</p>
+        <p class="footer-menu">Frequently asked questions</p>
+        <p class="footer-menu">Store Locator </p>
+        <p class="footer-menu">Cancellation & Return</p>
+        <p class="footer-menu">Shipping & Delivery</p>
+        <p class="footer-menu">Sell on Nykaa</p>
     </div>
 
     <div>
-        <h5>Inspire Me</h5>
-        <p>Beauty Book</p>
-        <p>Nykaa TV</p>
-        <p>Nykaa Network</p>
-        <p>Buying Guides</p>
+        <h5 class="footer-head">Inspire Me</h5>
+        <p class="footer-menu">Beauty Book</p>
+        <p class="footer-menu">Nykaa TV</p>
+        <p class="footer-menu">Nykaa Network</p>
+        <p class="footer-menu">Buying Guides</p>
        
     </div>
 
     <div>
-        <h5>Quick Links</h5>
-        <p>Offer Zone</p>
-        <p>New Launches</p>
-        <p>Nykaa Man</p>
-        <p>Nykaa Fashion</p>
-        <p>Nykaa Pro</p>
-        <p>Sitemap</p>
+        <h5 class="footer-head">Quick Links</h5>
+        <p class="footer-menu">Offer Zone</p>
+        <p class="footer-menu">New Launches</p>
+        <p class="footer-menu">Nykaa Man</p>
+        <p class="footer-menu">Nykaa Fashion</p>
+        <p class="footer-menu">Nykaa Pro</p>
+        <p class="footer-menu">Sitemap</p>
     </div>
        
     <div>
-        <h5>Top Categories</h5>
-        <p>Makeup</p>
-        <p>Hair</p>
-        <p>skin</p>
-        <p>Personak Care</p>
-        <p>Appliances</p>
-        <p>Mom and Baby</p>
-        <p>Wellness</p>
-        <p>Fragnance</p>
-        <p>Nature</p>
-        <p>Luxe</p>
+        <h5 class="footer-head">Top Categories</h5>
+        <p class="footer-menu">Makeup</p>
+        <p class="footer-menu">Hair</p>
+        <p class="footer-menu">skin</p>
+        <p class="footer-menu">Personak Care</p>
+        <p class="footer-menu">Appliances</p>
+        <p class="footer-menu">Mom and Baby</p>
+        <p class="footer-menu">Wellness</p>
+        <p class="footer-menu">Fragnance</p>
+        <p class="footer-menu">Nature</p>
+        <p class="footer-menu">Luxe</p>
     </div>
 
 </div>`

@@ -8,7 +8,7 @@
       padding: 20px 0px;
       width: 98%;
       left: 10px;
-      margin-top: 15px;
+      margin-top: 0px;
       box-shadow: none;
       -webkit-box-shadow: none;
   }
@@ -50,3 +50,16 @@
     padding: 0px 20px;
     
   }
+  #navbarBottom {
+    margin-top: 115px;
+  }
+  .navbarBottomMenu{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: -0.1px;
+    padding: 14px 0 13px;
+    color: rgba(3, 2, 26, 0.6);
+    border-bottom: 3px solid transparent;
+  }
+ 

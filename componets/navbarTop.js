@@ -1,5 +1,5 @@
 const navbarTop = () => {
-    return `<nav class="navbar navbar-expand-md navbar-light">
+    return `<nav class="navbar navbar-expand-md navbar-light bg-white">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
       <img src="./resouces/images/Divalogo.png" alt="" height="30px">
@@ -198,7 +198,7 @@ const navbarTop = () => {
           <span class="visually-hidden">unread messages</span>
         </span>
           </span>
-          <span class="pt-1 ps-1">Account</span>
+          <span class="pt-2 ps-1">Account</span>
           <span class="pe-4 ps-3"><img src="./resouces/images/shopping-bag.png" alt="" height="36px;"></span>
         </form>
       </div>
