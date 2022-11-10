@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+
+#Category>h1{
+    text-align: center;
+}
+
+#category{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+/* Best Seller */
+
+#Seller>h1{
+    text-align: center;
+}
+
+#Best_Sellers{
+    /* display: grid;
+    grid-template-columns: repeat(20,1fr); */
+    overflow: auto;
+    white-space: nowrap;
+    width: 80%;
+    margin: auto;
+}
+.Best_Pro{
+    display: inline-block;
+    text-align: center;
+   border: 2px solid pink;
+   width: 35%;
+}
+
+.Best_Pro>img{
+    border: 4px solid red;
+    width: 40%;
+}
+/* Trendind Cart */
+#Trending_Now{
+    text-align: center;
+}
+
+#Trending_cart{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+/* Brand you love */
+
+#Brand_you_Love{
+    text-align: center;
+}
+
+#Brand_cart{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+   gap: 20px;
+}
+#Brand_cart>div{
+    border: 4px solid red;
+    border-radius: 8px;
+}
+
+#Brand_cart img{
+   width:270px;
+   height: 250px;
+   display: block;
+   margin: auto;
+   
+}
+

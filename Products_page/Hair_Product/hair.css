@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+#Seller>h1{
+    text-align: center;
+}
+
+#Bestseller{
+    /* display: grid;
+    grid-template-columns: repeat(20,1fr); */
+    overflow: auto;
+    white-space: nowrap;
+    width: 80%;
+    margin: auto;
+}
+.Best_Pro_Hair{
+    display: inline-block;
+    text-align: center;
+   border: 2px solid pink;
+   width: 35%;
+}
+
+.Best_Pro_Hair>img{
+    border: 4px solid red;
+    width: 40%;
+}
+
+/* tRENDING CART */
+#trending{
+    text-align: center;
+}
+
+
+#Trending_cart{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+} 
+/* Buying Guides */
+#buying{
+    text-align: center;
+}
+
+#Buying_Guide{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+/* Buying Budget */
+#budget{
+    text-align: center;
+}
+
+#Budget_buys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+/* category */
+#Category>h1{
+    text-align: center;
+}
+
+#category{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+/* Brands  */
+#brands{
+    text-align: center;
+}
+
+#Brand_cart{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+   gap: 20px;
+}
+#Brand_cart>div{
+    border: 4px solid red;
+    border-radius: 8px;
+}
+
+#Brand_cart img{
+   width:270px;
+   height: 250px;
+   display: block;
+   margin: auto;
+   
+}
