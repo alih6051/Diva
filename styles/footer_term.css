@@ -65,7 +65,6 @@ img{
     background-color: #8C8D94;
     color: white;
 }
-
 #footer_delivery{
     display: grid;
     grid-template-columns: repeat(5,1fr);
