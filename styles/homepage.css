@@ -1,0 +1,49 @@
+.offerBanner{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .topOffer{
+    display: flex;
+      width: 90%;
+      margin: auto;
+  }
+  .offerImg {
+    width: 100%;
+    height: 95%;
+    border-radius: 6px;
+  }
+  .offer-span{
+    color: #ff3546;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .offer-card {
+    height: 85px;
+    bottom: 85px;
+    width: auto;
+    padding: 12px;
+    margin: 0px 15px;
+  }
+  .offer-second-span {
+    font-size: 18px;
+  }
+  .feature-brand-card{
+    height: 430px;
+  }
+  .categoryFocusBanner{
+    margin: auto;
+    display: flex;
+    width: 85%;
+    padding-bottom: 10px;
+}
+.gift-card-section {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+  

@@ -15,25 +15,29 @@ body {
 #top{
     display: flex;
     justify-content: space-around;
-    width: 70%;
+    width: 95%;
     margin: auto;
     padding: 40px;
 }
 #top>div{
     display: flex;
-   
-    gap: 20px;
-   
+    gap: 20px; 
 }
-h5{
-    font-size: 14px;
+.footer-head{
+    font-size: 18px;
+    color: #fff;
 }
-p{
-    font-size: 12px;
-}
-img{
+.footer-menu{
+    font-size: 13px;
+    color: #fff;
     margin-top: 10px;
 }
+.footer-logo {
+    margin-bottom: 15px;
+}
+/* img{
+    margin-top: 10px;
+} */
 
 #bottom{
     background-color: #fc2779;
