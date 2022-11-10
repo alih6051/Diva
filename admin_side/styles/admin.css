@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f9fafb;
+}
+
+img {
+  width: 100px;
+  padding-right: 20px;
+}
+
+#container {
+  /* border: 1px solid red; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 30px; */
+}
+
+.icon_div > div:nth-child(2) {
+  /* border: 1px solid red; */
+  /* padding: 20px; */
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.icon_div > .g_logo_div {
+  margin-bottom: 15px;
+  border-right: 2px solid rgb(188, 186, 186);
+}
+
+#login_div {
+  /* display: none; */
+  /* border: 1px solid red; */
+  padding: 40px 30px;
+  background-color: white;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  width: 350px;
+}
+
+#login_form {
+  /* border: 1px solid red; */
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-left: 5px;
+  border-radius: 3px;
+  background-color: #fafafa;
+  border: 1px solid rgb(219, 219, 219);
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+p {
+  color: black;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+#to_signup,
+#to_signin {
+  color: #fc2779;
+  cursor: pointer;
+}
+
+.btn_div {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.btn_div > button {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 8px 0;
+  color: white;
+  background-color: #fc2779;
+}

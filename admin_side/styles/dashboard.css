@@ -162,6 +162,8 @@ body {
 
 #products_page .action_div {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 table {
@@ -269,4 +271,7 @@ table tbody tr {
 
 .del_icon:hover {
   color: rgb(238, 68, 68);
+}
+.btn:hover {
+  background-color: whitesmoke;
 }

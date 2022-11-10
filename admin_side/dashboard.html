@@ -9,7 +9,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./styles/dashboard.css" />
-    <title>Diva Admin</title>
+    <link rel="stylesheet" href="./styles/modal-popup.css" />
+    <title>Diva | Admin Dashboard</title>
   </head>
   <body>
     <div id="main_container">
@@ -41,18 +42,85 @@
       </div>
       <div id="rhs">
         <div id="navbar">
-          <div id="admin_icon_div">H</div>
+          <div id="admin_icon_div"></div>
         </div>
         <div id="rhs_body">
           <div id="products_page" class="page active">
             <div class="header">
               <h4>Products</h4>
               <button id="add_product" class="btn">New Product</button>
+              <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <select id="new_prod_category">
+                    <option value="skincare">Skincare</option>
+                    <option value="fragrance">Fragrance</option>
+                    <option value="hair">Hair</option>
+                  </select>
+                  <input
+                    type="text"
+                    id="new_prod_name"
+                    placeholder="Add Product Name"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="new_prod_img"
+                    placeholder="Add Image Address"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="new_prod_price"
+                    placeholder="Add Product Price"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="new_prod_brandName"
+                    placeholder="Add Brand Name"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="new_prod_quantity"
+                    placeholder="Add Quantity"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="new_prod_description"
+                    placeholder="Add Description"
+                    required
+                  />
+                  <button id="add_new_product">Add Product</button>
+                </div>
+              </div>
             </div>
             <div class="action_div">
-              <button class="btn">BTN 1</button>
-              <button class="btn">BTN 1</button>
-              <button class="btn">BTN 1</button>
+              <div>
+                <button class="btn cat_btn link_active" id="skin_btn">
+                  SKINCARE
+                </button>
+                <button class="btn cat_btn" id="frag_btn">FRAGRANCE</button>
+                <button class="btn cat_btn" id="hair_btn">HAIR</button>
+              </div>
+              <div>
+                <select id="filter_Prod" class="btn">
+                  <option value="">Filter By</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+                  <option value="999">Less Than 999</option>
+                  <option value="1499">Less Than 1499</option>
+                  <option value="1999">More Than 1999</option>
+                </select>
+                <select id="sort_Prod" class="btn">
+                  <option value="">Sort By</option>
+                  <option value="asc">Low To High</option>
+                  <option value="desc">High To Low</option>
+                </select>
+              </div>
             </div>
             <table>
               <thead>
@@ -79,3 +147,4 @@
   </body>
 </html>
 <script type="module" src="./scripts/dashboard.js"></script>
+<script type="module" src="./scripts/modal-popup.js"></script>
