@@ -7,9 +7,9 @@
       "image": "https://www.sephora.com/productimages/sku/s2496453-main-Lhero.jpg?pb=2020-03-sephora-clean-2019",
       "rating": 2,
       "reviews": "8",
-      "price": 1990,
+      "price": 1999,
       "brandName": "Dr. Dennis Gross Skincare",
-      "quantity": 90,
+      "quantity": 50,
       "description": "Dr. Dennis Gross Skincare - Mini Alpha Beta® Ultra Gentle Daily Peel for Sensitive Skin"
     },
     {
@@ -19,7 +19,7 @@
       "image": "https://www.sephora.com/productimages/sku/s2500726-main-Lhero.jpg?pb=2020-03-sephora-clean-2019",
       "rating": 3,
       "reviews": "280",
-      "price": 2920,
+      "price": 2999,
       "brandName": "TULA Skincare",
       "quantity": 50,
       "description": "TULA Skincare - Mini The Cult Classic Purifying Face Cleanser"
@@ -33,7 +33,7 @@
       "reviews": "254",
       "price": 1231,
       "brandName": "TULA Skincare",
-      "quantity": 100,
+      "quantity": 50,
       "description": "TULA Skincare - Mini 24-7 Moisture Hydrating Day & Night Cream"
     },
     {
@@ -1503,6 +1503,12 @@
       "brandName": "Briogeo",
       "quantity": 50,
       "description": "Briogeo - Blossom & Bloom™ Volumize + Lift Hair Care Travel Kit"
+    }
+  ],
+  "admin_users": [
+    {
+      "username": "authhasan",
+      "password": "authhasan"
     }
   ]
 }
