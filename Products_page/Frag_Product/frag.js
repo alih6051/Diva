@@ -347,6 +347,7 @@ catch(error){
        })
 
        appendProducts(filterData)
+       createBtn(filterData.length,6)
        console.log(filterData)
       }
    catch(error){
@@ -365,6 +366,7 @@ catch(error){
       })
 
       appendProducts(filterData)
+      createBtn(filterData.length,12)
       console.log(filterData)
      }
   catch(error){
@@ -383,6 +385,7 @@ catch(error){
       })
 
       appendProducts(filterData)
+      createBtn(filterData.length,6)
       console.log(filterData)
      }
   catch(error){
@@ -399,7 +402,7 @@ catch(error){
       let data=await res2.json();
       // console.log(data)
       appendProducts(data)
-      
+      createBtn(data.length,12)
     
   }
   catch(error){

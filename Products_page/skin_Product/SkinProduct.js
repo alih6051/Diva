@@ -40,7 +40,7 @@ let buttons_div=document.getElementById("footer_btn");
 
 const createBtn=(total_images,images_per_page)=>{
   const buttons=Math.ceil(total_images/images_per_page);
-
+   buttons_div.innerHTML=null
   for(let i=1;i<=buttons;i++){
     let Btn=document.createElement("button");
     Btn.setAttribute("class","FooterBtn")
@@ -316,6 +316,7 @@ catch(error){
        })
 
        appendProducts(filterData)
+       createBtn(filterData.length,9)
        console.log(filterData)
       }
    catch(error){
@@ -334,6 +335,7 @@ catch(error){
       })
 
       appendProducts(filterData)
+      createBtn(filterData.length,9)
       console.log(filterData)
      }
   catch(error){
@@ -352,6 +354,7 @@ catch(error){
       })
 
       appendProducts(filterData)
+      createBtn(filterData.length,9)
       console.log(filterData)
      }
   catch(error){
@@ -370,6 +373,7 @@ catch(error){
       })
 
       appendProducts(filterData)
+      createBtn(filterData.length,9)
       console.log(filterData)
      }
   catch(error){
@@ -382,7 +386,8 @@ catch(error){
         
       let data=await res2.json();
       // console.log(data)
-      appendProducts(data)
+      appendProducts(data) 
+      createBtn(data.length,12)
       
     
   }
