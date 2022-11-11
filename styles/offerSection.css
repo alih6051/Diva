@@ -25,5 +25,5 @@
     line-height: 40px;
     padding: 0px;
     position: relative;
-    z-index: 10001 !important;
+    z-index: 100 !important;
 }

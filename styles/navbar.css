@@ -6,9 +6,10 @@
   }
   .mega-dropdown-menu {
       padding: 20px 0px;
-      width: 98%;
+      width: 90%;
       left: 10px;
       margin-top: 0px;
+      margin-left: 50px;
       box-shadow: none;
       -webkit-box-shadow: none;
   }
@@ -43,11 +44,11 @@
   }
   .mega-dropdown a {
     text-decoration: none !important;
-    color: #000;
+    color:rgba(3, 2, 26, 0.6);
     font-weight: 600;
   }
   .navbar-nav li {
-    padding: 0px 20px;
+    padding: 0px 12px;
     
   }
   #navbarBottom {
@@ -61,5 +62,8 @@
     padding: 14px 0 13px;
     color: rgba(3, 2, 26, 0.6);
     border-bottom: 3px solid transparent;
+  }
+  .navbar-bottom-line {
+    border-bottom: solid 1px #e6dede;
   }
  
