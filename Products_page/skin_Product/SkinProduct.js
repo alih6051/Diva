@@ -93,10 +93,19 @@ const appendProducts=(data)=>{
     let View_btn=document.createElement("button")
     View_btn.innerText="Add to Bag"
     View_btn.setAttribute("class","View_Btn")
+
+    if(el.active===true){
+      View_btn.addEventListener("click",function(){
+        console.log("HI");
+        AddToCart(el)
+        })
+    }else{
+      alert("Product is not available")
+    }
     
-    View_btn.addEventListener("click",function(){
-    console.log("HI");
-    })
+    // View_btn.addEventListener("click",function(){
+    // console.log("HI");
+    // })
      
     div_View_btn.append(View_btn)
 
@@ -107,5 +116,377 @@ const appendProducts=(data)=>{
 }
 
 
+const AddToCart=(el)=>{
+  let SKINPRODUCT=JSON.parse(localStorage.getItem("ADD_TO_CART"))|| [];
+  SKINPRODUCT.push(el);
+  localStorage.setItem("ADD_TO_CART",JSON.stringify(SKINPRODUCT))
+  
+  }
+  
+// Price Sorting
+
+let Sort=document.getElementById("SORT")
+Sort.addEventListener("change",function(){
+  SortByPrice()
+})
+
+ async function SortByPrice(){
+ let SortValue=document.getElementById("SORT").value 
+
+ if(SortValue==="Low"){
+ 
+  try{
+    let resp=await fetch(`http://localhost:3000/skincare?_sort=price&_order=asc`);
+      
+    let data=await resp.json();
+    // console.log(data)
+    appendProducts(data)
+   
+   
+  
+}
+catch(error){
+    console.log("Product not found")
+}
+}
+else if(SortValue==="High") {
+  try{
+    let res1=await fetch(`http://localhost:3000/skincare?_sort=price&_order=desc`);
+      
+    let data=await res1.json();
+    // console.log(data)
+    appendProducts(data)
+    
+  
+}
+catch(error){
+    console.log("Product not found")
+}
+}
+else  {
+  try{
+    let res2=await fetch(`http://localhost:3000/skincare?_limit=12`);
+      
+    let data=await res2.json();
+    // console.log(data)
+    appendProducts(data)
+    
+  
+}
+catch(error){
+    console.log("Product not found")
+}
+}
+ }
 
 
+//  Rating Sorting
+
+ let SortByRating=document.getElementById("SortByRating")
+ SortByRating.addEventListener("change",function(){
+   SortByRate()
+ })
+ 
+  async function SortByRate(){
+  let SortRate=document.getElementById("SortByRating").value 
+ 
+  if(SortRate==="Low"){
+  
+   try{
+     let resp=await fetch(`http://localhost:3000/skincare?_sort=rating&_order=asc`);
+       
+     let data=await resp.json();
+    //  console.log(data)
+     appendProducts(data)
+    
+    
+   
+ }
+ catch(error){
+     console.log("Product not found")
+ }
+ }
+ else if(SortValue==="High") {
+   try{
+     let res1=await fetch(`http://localhost:3000/skincare?_sort=rating&_order=desc`);
+       
+     let data=await res1.json();
+    //  console.log(data)
+     appendProducts(data)
+     
+   
+ }
+ catch(error){
+     console.log("Product not found")
+ }
+ }
+ else  {
+  try{
+    let res2=await fetch(`http://localhost:3000/skincare?_limit=12`);
+      
+    let data=await res2.json();
+    // console.log(data)
+    appendProducts(data)
+    
+  
+}
+catch(error){
+    console.log("Product not found")
+}
+}
+  }
+ 
+ 
+ 
+  // Review Sorting
+
+  let SortByReview1=document.getElementById("SortByReview")
+  SortByReview1.addEventListener("change",function(){
+    SortByReview()
+  })
+  
+   async function SortByReview(){
+   let SortReview=document.getElementById("SortByReview").value 
+  
+   if(SortReview==="Low"){
+   
+    try{
+      let resp=await fetch(`http://localhost:3000/skincare?_sort=reviews&_order=asc`);
+        
+      let data=await resp.json();
+      // console.log(data)
+      appendProducts(data)
+     
+     
+    
+  }
+  catch(error){
+      console.log("Product not found")
+  }
+  }
+  else if(SortValue==="High") {
+    try{
+      let res1=await fetch(`http://localhost:3000/skincare?_sort=reviews&_order=desc`);
+        
+      let data=await res1.json();
+      // console.log(data)
+      appendProducts(data)
+      
+    
+  }
+  catch(error){
+      console.log("Product not found")
+  }
+  } else  {
+    try{
+      let res2=await fetch(`http://localhost:3000/skincare?_limit=12`);
+        
+      let data=await res2.json();
+      // console.log(data)
+      appendProducts(data)
+      
+    
+  }
+  catch(error){
+      console.log("Product not found")
+  }
+  }
+   }
+
+   /////filter  1.tula 2.dr. dennis 3.ren clean  4.dr. brandt
+
+   let Brand=document.getElementById("FilterByBrand")
+   Brand.addEventListener("change",function(){
+     BrandFilter()
+   })
+
+   async function BrandFilter(){
+    let brand=document.getElementById("FilterByBrand").value 
+   
+    if(brand==="1"){
+    
+     try{
+       let resp=await fetch(`http://localhost:3000/skincare`);
+         
+       let data=await resp.json();
+      //  console.log(data)
+       
+      let filterData=data.filter((el)=>{
+        return el.brandName === "TULA Skincare"
+       })
+
+       appendProducts(filterData)
+       console.log(filterData)
+      }
+   catch(error){
+       console.log("Product not found")
+   }
+   }
+   else if(brand==="2") {
+    try{
+      let resp=await fetch(`http://localhost:3000/skincare`);
+        
+      let data=await resp.json();
+     //  console.log(data)
+      
+     let filterData=data.filter((el)=>{
+       return el.brandName === "Dr. Dennis Gross Skincare"
+      })
+
+      appendProducts(filterData)
+      console.log(filterData)
+     }
+  catch(error){
+      console.log("Product not found")
+  }
+   }
+   else if(brand==="3") {
+    try{
+      let resp=await fetch(`http://localhost:3000/skincare`);
+        
+      let data=await resp.json();
+     //  console.log(data)
+      
+     let filterData=data.filter((el)=>{
+       return el.brandName === "Dr. Brandt Skincare"
+      })
+
+      appendProducts(filterData)
+      console.log(filterData)
+     }
+  catch(error){
+      console.log("Product not found")
+  }
+   }
+   else if(brand==="4") {
+    try{
+      let resp=await fetch(`http://localhost:3000/skincare`);
+        
+      let data=await resp.json();
+     //  console.log(data)
+      
+     let filterData=data.filter((el)=>{
+       return el.brandName === "REN Clean Skincare"
+      })
+
+      appendProducts(filterData)
+      console.log(filterData)
+     }
+  catch(error){
+      console.log("Product not found")
+  }
+   }
+   else  {
+    try{
+      let res2=await fetch(`http://localhost:3000/skincare?_limit=12`);
+        
+      let data=await res2.json();
+      // console.log(data)
+      appendProducts(data)
+      
+    
+  }
+  catch(error){
+      console.log("Product not found")
+  }
+  }
+    }
+
+    //filter price
+
+    let BrandPrice=document.getElementById("FilterByPrice")
+    BrandPrice.addEventListener("change",function(){
+      BrandPriceFilter()
+    })
+ 
+    async function BrandPriceFilter(){
+     let brandPrice=document.getElementById("FilterByPrice").value 
+    
+     if(brandPrice==="1"){
+     
+      try{
+        let resp=await fetch(`http://localhost:3000/skincare`);
+          
+        let data=await resp.json();
+       //  console.log(data)
+        
+       let filterData=data.filter((el)=>{
+         return el.price<=999
+        })
+ 
+        appendProducts(filterData)
+        console.log(filterData)
+       }
+    catch(error){
+        console.log("Product not found")
+    }
+    }
+    else if(brandPrice==="2") {
+     try{
+       let resp=await fetch(`http://localhost:3000/skincare`);
+         
+       let data=await resp.json();
+      //  console.log(data)
+       
+      let filterData=data.filter((el)=>{
+        return el.price<=1499
+       })
+ 
+       appendProducts(filterData)
+       console.log(filterData)
+      }
+   catch(error){
+       console.log("Product not found")
+   }
+    }
+    else if(brandPrice==="3") {
+     try{
+       let resp=await fetch(`http://localhost:3000/skincare`);
+         
+       let data=await resp.json();
+      //  console.log(data)
+       
+      let filterData=data.filter((el)=>{
+        return el.price<=2999
+       })
+ 
+       appendProducts(filterData)
+       console.log(filterData)
+      }
+   catch(error){
+       console.log("Product not found")
+   }
+    }
+    else if(brandPrice==="4") {
+     try{
+       let resp=await fetch(`http://localhost:3000/skincare`);
+         
+       let data=await resp.json();
+      //  console.log(data)
+       
+      let filterData=data.filter((el)=>{
+        return el.price>2999
+       })
+ 
+       appendProducts(filterData)
+       console.log(filterData)
+      }
+   catch(error){
+       console.log("Product not found")
+   }
+    }
+    else  {
+      try{
+        let res2=await fetch(`http://localhost:3000/skincare?_limit=12`);
+          
+        let data=await res2.json();
+        // console.log(data)
+        appendProducts(data)
+        
+      
+    }
+    catch(error){
+        console.log("Product not found")
+    }
+    }
+     }

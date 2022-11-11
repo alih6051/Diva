@@ -4,9 +4,9 @@
 
 
 
-const Hair_product=async() =>{
+const Frag_product=async() =>{
     try{
-        let res=await fetch(`http://localhost:3000/hair`);
+        let res=await fetch(`http://localhost:3000/Fragrance`);
           
         let data=await res.json();
         console.log(data)
@@ -26,9 +26,9 @@ const Hair_product=async() =>{
 }
  
 
-const Paginate_Hair_product=async(clicked_button,limit) =>{
+const Paginate_Frag_product=async(clicked_button,limit) =>{
   try{
-      let res=await fetch(`http://localhost:3000/hair?_page=${clicked_button}&_limit=${limit}`);
+      let res=await fetch(`http://localhost:3000/Fragrance?_page=${clicked_button}&_limit=${limit}`);
         
       let data=await res.json();
       console.log(data)
@@ -41,9 +41,9 @@ const Paginate_Hair_product=async(clicked_button,limit) =>{
   }
 }
 
-Hair_product()
+Frag_product()
 
-Paginate_Hair_product(1,12)
+Paginate_Frag_product(1,12)
 
 let buttons_div=document.getElementById("footer_btn");
 
@@ -58,7 +58,7 @@ const createBtn=(total_images,images_per_page)=>{
     Btn.innerText=i;
 
     Btn.onclick=()=>{
-      Paginate_Hair_product(i,12)
+      Paginate_Frag_product(i,12)
     }
     buttons_div.append(Btn)
   }
@@ -74,7 +74,7 @@ const appendProducts=(data)=>{
 
   data.forEach((el)=>{
     let div=document.createElement("div");
-    div.setAttribute("class","SkinProduct")
+    div.setAttribute("class","FragProduct")
 
     let div_Image=document.createElement("div");
     div_Image.setAttribute("class","div_img")
@@ -123,9 +123,9 @@ const appendProducts=(data)=>{
 }
 
 const AddToCart=(el)=>{
-let HAIRPRODUCT=JSON.parse(localStorage.getItem("ADD_TO_CART"))|| [];
-HAIRPRODUCT.push(el);
-localStorage.setItem("ADD_TO_CART",JSON.stringify(HAIRPRODUCT))
+let FRAGPRODUCT=JSON.parse(localStorage.getItem("ADD_TO_CART"))|| [];
+FRAGPRODUCT.push(el);
+localStorage.setItem("ADD_TO_CART",JSON.stringify(FRAGPRODUCT))
 
 }
 
@@ -166,7 +166,7 @@ Sort.addEventListener("change",function(){
  if(SortValue==="Low"){
  
   try{
-    let resp=await fetch(`http://localhost:3000/hair?_sort=price&_order=asc`);
+    let resp=await fetch(`http://localhost:3000/Fragrance?_sort=price&_order=asc`);
       
     let data=await resp.json();
     // console.log(data)
@@ -181,7 +181,7 @@ catch(error){
 }
 else if(SortValue==="High") {
   try{
-    let res1=await fetch(`http://localhost:3000/hair?_sort=price&_order=desc`);
+    let res1=await fetch(`http://localhost:3000/Fragrance?_sort=price&_order=desc`);
       
     let data=await res1.json();
     // console.log(data)
@@ -195,7 +195,7 @@ catch(error){
 }
 else  {
   try{
-    let res2=await fetch(`http://localhost:3000/hair?_limit=12`);
+    let res2=await fetch(`http://localhost:3000/Fragrance?_limit=12`);
       
     let data=await res2.json();
     // console.log(data)
@@ -223,7 +223,7 @@ catch(error){
   if(SortRate==="Low"){
   
    try{
-     let resp=await fetch(`http://localhost:3000/hair?_sort=rating&_order=asc`);
+     let resp=await fetch(`http://localhost:3000/Fragrance?_sort=rating&_order=asc`);
        
      let data=await resp.json();
     //  console.log(data)
@@ -238,7 +238,7 @@ catch(error){
  }
  else if(SortRate==="High") {
    try{
-     let res1=await fetch(`http://localhost:3000/hair?_sort=rating&_order=desc`);
+     let res1=await fetch(`http://localhost:3000/Fragrance?_sort=rating&_order=desc`);
        
      let data=await res1.json();
     //  console.log(data)
@@ -252,7 +252,7 @@ catch(error){
  }
  else  {
   try{
-    let res2=await fetch(`http://localhost:3000/hair?_limit=12`);
+    let res2=await fetch(`http://localhost:3000/Fragrance?_limit=12`);
       
     let data=await res2.json();
     // console.log(data)
@@ -281,7 +281,7 @@ catch(error){
    if(SortReview==="Low"){
    
     try{
-      let resp=await fetch(`http://localhost:3000/hair?_sort=reviews&_order=asc`);
+      let resp=await fetch(`http://localhost:3000/Fragrance?_sort=reviews&_order=asc`);
         
       let data=await resp.json();
       // console.log(data)
@@ -296,7 +296,7 @@ catch(error){
   }
   else if(SortReview==="High") {
     try{
-      let res1=await fetch(`http://localhost:3000/hair?_sort=reviews&_order=desc`);
+      let res1=await fetch(`http://localhost:3000/Fragrance?_sort=reviews&_order=desc`);
         
       let data=await res1.json();
       // console.log(data)
@@ -310,7 +310,7 @@ catch(error){
   }
   else  {
     try{
-      let res2=await fetch(`http://localhost:3000/hair?_limit=12`);
+      let res2=await fetch(`http://localhost:3000/Fragrance?_limit=12`);
         
       let data=await res2.json();
       // console.log(data)
@@ -337,13 +337,13 @@ catch(error){
     if(brand==="1"){
     
      try{
-       let resp=await fetch(`http://localhost:3000/hair`);
+       let resp=await fetch(`http://localhost:3000/Fragrance`);
          
        let data=await resp.json();
       //  console.log(data)
        
       let filterData=data.filter((el)=>{
-        return el.brandName === "Briogeo"
+        return el.brandName === "Yves Saint Laurent"
        })
 
        appendProducts(filterData)
@@ -355,13 +355,13 @@ catch(error){
    }
    else if(brand==="2") {
     try{
-      let resp=await fetch(`http://localhost:3000/hair`);
+      let resp=await fetch(`http://localhost:3000/Fragrance`);
         
       let data=await resp.json();
      //  console.log(data)
       
      let filterData=data.filter((el)=>{
-       return el.brandName === "The Ordinary"
+       return el.brandName === "Marc Jacobs Fragrances"
       })
 
       appendProducts(filterData)
@@ -373,13 +373,13 @@ catch(error){
    }
    else if(brand==="3") {
     try{
-      let resp=await fetch(`http://localhost:3000/hair`);
+      let resp=await fetch(`http://localhost:3000/Fragrance`);
         
       let data=await resp.json();
      //  console.log(data)
       
      let filterData=data.filter((el)=>{
-       return el.brandName === "Pureology"
+       return el.brandName === "Atelier Cologne"
       })
 
       appendProducts(filterData)
@@ -389,171 +389,12 @@ catch(error){
       console.log("Product not found")
   }
    }
-   else if(brand==="4") {
-    try{
-      let resp=await fetch(`http://localhost:3000/hair`);
-        
-      let data=await resp.json();
-     //  console.log(data)
-      
-     let filterData=data.filter((el)=>{
-       return el.brandName === "Oribe"
-      })
 
-      appendProducts(filterData)
-      console.log(filterData)
-     }
-  catch(error){
-      console.log("Product not found")
-  }
-   }
-   else if(brand==="5") {
-    try{
-      let resp=await fetch(`http://localhost:3000/hair`);
-        
-      let data=await resp.json();
-     //  console.log(data)
-      
-     let filterData=data.filter((el)=>{
-       return el.brandName === "Living Proof"
-      })
 
-      appendProducts(filterData)
-      console.log(filterData)
-     }
-  catch(error){
-      console.log("Product not found")
-  }
-   }
-   else if(brand==="6") {
-    try{
-      let resp=await fetch(`http://localhost:3000/hair`);
-        
-      let data=await resp.json();
-     //  console.log(data)
-      
-     let filterData=data.filter((el)=>{
-       return el.brandName === "OUAI"
-      })
 
-      appendProducts(filterData)
-      console.log(filterData)
-     }
-  catch(error){
-      console.log("Product not found")
-  }
-   }
-   else if(brand==="7") {
-    try{
-      let resp=await fetch(`http://localhost:3000/hair`);
-        
-      let data=await resp.json();
-     //  console.log(data)
-      
-     let filterData=data.filter((el)=>{
-       return el.brandName === "Fable & Mane"
-      })
-
-      appendProducts(filterData)
-      console.log(filterData)
-     }
-  catch(error){
-      console.log("Product not found")
-  }
-   }
-   else if(brand==="8") {
-    try{
-      let resp=await fetch(`http://localhost:3000/hair`);
-        
-      let data=await resp.json();
-     //  console.log(data)
-      
-     let filterData=data.filter((el)=>{
-       return el.brandName === "dae"
-      })
-
-      appendProducts(filterData)
-      console.log(filterData)
-     }
-  catch(error){
-      console.log("Product not found")
-  }
-   }
-   else if(brand==="9") {
-    try{
-      let resp=await fetch(`http://localhost:3000/hair`);
-        
-      let data=await resp.json();
-     //  console.log(data)
-      
-     let filterData=data.filter((el)=>{
-       return el.brandName === "Gisou"
-      })
-
-      appendProducts(filterData)
-      console.log(filterData)
-     }
-  catch(error){
-      console.log("Product not found")
-  }
-   }
-   else if(brand==="10") {
-    try{
-      let resp=await fetch(`http://localhost:3000/hair`);
-        
-      let data=await resp.json();
-     //  console.log(data)
-      
-     let filterData=data.filter((el)=>{
-       return el.brandName === "Kérastase"
-      })
-
-      appendProducts(filterData)
-      console.log(filterData)
-     }
-  catch(error){
-      console.log("Product not found")
-  }
-   }
-   else if(brand==="11") {
-    try{
-      let resp=await fetch(`http://localhost:3000/hair`);
-        
-      let data=await resp.json();
-     //  console.log(data)
-      
-     let filterData=data.filter((el)=>{
-       return el.brandName === "Sol de Janeiro"
-      })
-
-      appendProducts(filterData)
-      console.log(filterData)
-     }
-  catch(error){
-      console.log("Product not found")
-  }
-   }
-   else if(brand==="12") {
-    try{
-      let resp=await fetch(`http://localhost:3000/hair`);
-        
-      let data=await resp.json();
-     //  console.log(data)
-      
-     let filterData=data.filter((el)=>{
-       return el.brandName === "K18 Biomimetic Hairscience"
-      })
-
-      appendProducts(filterData)
-      console.log(filterData)
-     }
-  catch(error){
-      console.log("Product not found")
-  }
-   }
    else  {
     try{
-      let res2=await fetch(`http://localhost:3000/hair?_limit=12`);
+      let res2=await fetch(`http://localhost:3000/Fragrance?_limit=12`);
         
       let data=await res2.json();
       // console.log(data)
@@ -580,7 +421,7 @@ catch(error){
      if(brandPrice==="1"){
      
       try{
-        let resp=await fetch(`http://localhost:3000/hair`);
+        let resp=await fetch(`http://localhost:3000/Fragrance`);
           
         let data=await resp.json();
        //  console.log(data)
@@ -598,7 +439,7 @@ catch(error){
     }
     else if(brandPrice==="2") {
      try{
-       let resp=await fetch(`http://localhost:3000/hair`);
+       let resp=await fetch(`http://localhost:3000/Fragrance`);
          
        let data=await resp.json();
       //  console.log(data)
@@ -616,7 +457,7 @@ catch(error){
     }
     else if(brandPrice==="3") {
      try{
-       let resp=await fetch(`http://localhost:3000/hair`);
+       let resp=await fetch(`http://localhost:3000/Fragrance`);
          
        let data=await resp.json();
       //  console.log(data)
@@ -634,7 +475,7 @@ catch(error){
     }
     else if(brandPrice==="4") {
      try{
-       let resp=await fetch(`http://localhost:3000/hair`);
+       let resp=await fetch(`http://localhost:3000/Fragrance`);
          
        let data=await resp.json();
       //  console.log(data)
@@ -652,7 +493,7 @@ catch(error){
     }
     else  {
       try{
-        let res2=await fetch(`http://localhost:3000/hair?_limit=12`);
+        let res2=await fetch(`http://localhost:3000/Fragrance?_limit=12`);
           
         let data=await res2.json();
         // console.log(data)

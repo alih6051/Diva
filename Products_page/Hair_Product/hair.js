@@ -1,5 +1,18 @@
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 function slideshow(){
     let imageArr=['https://images-static.nykaa.com/uploads/4ff2b551-827d-42b1-9662-9ea9271cfc3e.jpg?tr=w-1200,cm-pad_resize','https://images-static.nykaa.com/uploads/321d36b3-9253-444d-9256-ff6778c43ca3.jpg?tr=w-1200,cm-pad_resize','https://images-static.nykaa.com/uploads/02ec95ca-f0c3-4499-9c42-a232672d1aa1.gif?tr=w-1200,cm-pad_resize'];
 
@@ -27,6 +40,12 @@ console.log("hi")
 }
 
 slideshow()
+
+
+
+
+
+
 
 
 const Hair_product=async() =>{
@@ -61,19 +80,19 @@ const appendProducts=(data)=>{
 
     let Pro_name=document.createElement("p");
     Pro_name.textContent=el.productName;
-    Pro_name.classList.add("text-truncate")
+    // Pro_name.classList.add("text-truncate")
 
-    let Reviews=document.createElement("p");
-    Reviews.textContent=el.reviews;
+    // let Reviews=document.createElement("p");
+    // Reviews.textContent=el.reviews;
 
     let Price=document.createElement("p");
-    Price.textContent=+(el.price);
+    Price.textContent="Rs"+" "+(el.price);
 
     let View_btn=document.createElement("button")
     View_btn.innerText="View"
 
 
-    div.append(image,Pro_name,Reviews,Price,View_btn)
+    div.append(image,Price)
 
     container.append(div);
   })
