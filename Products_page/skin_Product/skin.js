@@ -43,13 +43,13 @@ const appendProducts=(data)=>{
     Reviews.textContent=el.reviews;
 
     let Price=document.createElement("p");
-    Price.textContent=+(el.price);
+    Price.textContent="Rs"+" "+(el.price);
 
     let View_btn=document.createElement("button")
     View_btn.innerText="View"
 
 
-    div.append(image,Pro_name,Reviews,Price,View_btn)
+    div.append(image,Price)
 
     container.append(div);
   })

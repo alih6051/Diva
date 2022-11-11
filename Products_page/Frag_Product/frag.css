@@ -17,14 +17,13 @@ body {
     width: 70%;
     margin: auto;
     gap: 20px;
-    margin-top: 20px;
 }
-#FUNCTIONS{ 
+div#FUNCTIONS{ 
     flex: 3;
-    /* position: -webkit-sticky; */
+    position: -webkit-sticky;
     position: sticky;
-    top: 0px;
-   
+    top: 0;
+    
 }
 #Products{
     flex: 7;
@@ -46,8 +45,7 @@ body {
 }
 .Pro_Name{
     padding-top: 10px;
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-size: 15px;
 }
 
 .div_View_btn{
@@ -100,16 +98,13 @@ body {
 .FooterBtn{
     padding: 15px;
     border-radius: 50%;
-    margin: 60px 10px;
+    margin: 60px 20px;
     background-color: #fc2779;
     color: white;
     border: none;
-   
 }
 .SELECTTAG{
     padding: 10px;
     width: 200px;
-    
     cursor: pointer;
 }
-
