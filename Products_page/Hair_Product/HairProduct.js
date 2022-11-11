@@ -347,6 +347,7 @@ catch(error){
        })
 
        appendProducts(filterData)
+       createBtn(filterData.length,9)
        console.log(filterData)
       }
    catch(error){
@@ -365,6 +366,7 @@ catch(error){
       })
 
       appendProducts(filterData)
+      createBtn(filterData.length,9)
       console.log(filterData)
      }
   catch(error){
@@ -383,6 +385,7 @@ catch(error){
       })
 
       appendProducts(filterData)
+      createBtn(filterData.length,9)
       console.log(filterData)
      }
   catch(error){
@@ -401,6 +404,7 @@ catch(error){
       })
 
       appendProducts(filterData)
+      createBtn(filterData.length,9)
       console.log(filterData)
      }
   catch(error){
@@ -419,6 +423,7 @@ catch(error){
       })
 
       appendProducts(filterData)
+      createBtn(filterData.length,9)
       console.log(filterData)
      }
   catch(error){
@@ -437,6 +442,7 @@ catch(error){
       })
 
       appendProducts(filterData)
+      createBtn(filterData.length,9)
       console.log(filterData)
      }
   catch(error){
@@ -455,6 +461,7 @@ catch(error){
       })
 
       appendProducts(filterData)
+      createBtn(filterData.length,9)
       console.log(filterData)
      }
   catch(error){
@@ -473,6 +480,7 @@ catch(error){
       })
 
       appendProducts(filterData)
+      createBtn(filterData.length,9)
       console.log(filterData)
      }
   catch(error){
@@ -491,6 +499,7 @@ catch(error){
       })
 
       appendProducts(filterData)
+      createBtn(filterData.length,9)
       console.log(filterData)
      }
   catch(error){
@@ -509,6 +518,7 @@ catch(error){
       })
 
       appendProducts(filterData)
+      createBtn(filterData.length,9)
       console.log(filterData)
      }
   catch(error){
@@ -527,6 +537,7 @@ catch(error){
       })
 
       appendProducts(filterData)
+      createBtn(filterData.length,9)
       console.log(filterData)
      }
   catch(error){
@@ -545,6 +556,7 @@ catch(error){
       })
 
       appendProducts(filterData)
+      createBtn(filterData.length,9)
       console.log(filterData)
      }
   catch(error){
@@ -558,6 +570,7 @@ catch(error){
       let data=await res2.json();
       // console.log(data)
       appendProducts(data)
+      createBtn(data.length,12)
       
     
   }
