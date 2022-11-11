@@ -1,7 +1,7 @@
 const  footer_delivery = () =>{
     return ` <div id="footer_delivery">
     <div>
-      <img class="footer-logo" src="./resouces/images/Divalogo.png">
+      <img class="footer-logo" src="./assets/logo.png">
       <p class="footer-menu">Who are we?</p>
       <p class="footer-menu">Carrers</p>
       <p class="footer-menu">Authenticity</p>
