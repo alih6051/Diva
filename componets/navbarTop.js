@@ -1,8 +1,8 @@
 const navbarTop = () => {
     return `<nav class="navbar navbar-expand-md navbar-light bg-white navbar-bottom-line">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-      <img src="./resouces/images/Divalogo.png" alt="" height="30px">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+      <img src="./assets/logo.png" alt="" height="30px">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

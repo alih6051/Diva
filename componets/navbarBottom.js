@@ -64,7 +64,7 @@ const navbarBottom = () => {
         </ul>				
       </li>
       <li class="dropdown mega-dropdown">
-      <a href="./Products_page/Hair_Product/skin.html" class="navbarBottomMenu">Skin <span class="caret"></span></a>				
+      <a href="./Products_page/skin_Product/skin.html" class="navbarBottomMenu">Skin <span class="caret"></span></a>				
       <ul class="dropdown-menu mega-dropdown-menu">
       <div class="row">
       <li class="col-sm-2">
