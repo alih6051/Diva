@@ -64,7 +64,7 @@ const createBtn=(total_images,images_per_page)=>{
   }
 }
 
-
+let count=0;
 
 let container=document.getElementById("Products")
 const appendProducts=(data)=>{
@@ -106,8 +106,12 @@ const appendProducts=(data)=>{
     
     if(el.active===true){
       View_btn.addEventListener("click",function(){
-        console.log("HI");
-        AddToCart(el)
+        count++
+        let newQuantity=(el.quantity)-count;
+        console.log(newQuantity)
+        AddToCart(el);
+        QuantityCart(newQuantity);
+        
         })
     }else{
       alert("Product is not available")
@@ -129,7 +133,13 @@ localStorage.setItem("ADD_TO_CART",JSON.stringify(FRAGPRODUCT))
 
 }
 
-
+const QuantityCart=(Q)=>{
+  let FragQuantity=JSON.parse(localStorage.getItem("Quantity_Cart"))|| [];
+  FragQuantity.push(Q);
+  localStorage.setItem("Quantity_Cart",JSON.stringify(FragQuantity))
+  
+  }
+  
 
 
 
