@@ -225,7 +225,42 @@
               </tbody>
             </table>
           </div>
-          <div id="discounts_page" class="page">discounts Page</div>
+          <div id="discounts_page" class="page">
+            <h4>Discounts</h4>
+            <div class="action_div">
+              <div>
+                <input
+                  type="text"
+                  id="search_coupon"
+                  class="btn"
+                  placeholder="Search Coupon Code"
+                />
+                <button id="search_coupon_btn" class="btn">search</button>
+              </div>
+              <div>
+                <select id="sort_cus" class="btn">
+                  <option value="">Sort By</option>
+                  <option value="asc">A-Z</option>
+                  <option value="desc">Z-A</option>
+                </select>
+              </div>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Code</th>
+                  <th>Description</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                  <th>Remove</th>
+                </tr>
+              </thead>
+              <tbody id="coupons_tbody">
+                <!-- items row comes here -->
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
@@ -234,3 +269,4 @@
 <script type="module" src="./scripts/dashboard.js"></script>
 <script type="module" src="./scripts/modal-popup.js"></script>
 <script type="module" src="./scripts/customer.js"></script>
+<script type="module" src="./scripts/discounts.js"></script>

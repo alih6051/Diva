@@ -1,7 +1,6 @@
 const getCustomerData = async () => {
   let res = await fetch(`http://localhost:3000/user_login_details`);
   let data = await res.json();
-  console.log(data);
   appendCustomerData(data);
 };
 getCustomerData();

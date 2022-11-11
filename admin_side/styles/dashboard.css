@@ -21,6 +21,10 @@ body {
   cursor: pointer;
 }
 
+input:focus {
+  outline: 1px solid rgb(134, 130, 238);
+}
+
 /* custom Styles */
 
 #main_container {
@@ -148,6 +152,7 @@ body {
 
 #rhs_body h4 {
   font-weight: 500;
+  /* margin-bottom: 30px; */
 }
 
 /* Product page styles */
@@ -344,4 +349,30 @@ table tbody tr {
 }
 #customers_page > h4 {
   margin-bottom: 30px;
+}
+
+/* Discount Page Styles */
+
+#discounts_page h4 {
+  margin-bottom: 30px;
+}
+
+#discounts_page tr > th:nth-child(1) {
+  /* background-color: red; */
+  width: 25%;
+}
+
+#discounts_page tr > th:nth-child(2) {
+  /* background-color: red; */
+  width: 25%;
+}
+
+#discounts_page tr > th:nth-child(2) ~ th {
+  /* background-color: red; */
+  table-layout: auto;
+  text-align: center;
+}
+
+#discounts_page tbody tr {
+  height: 40px;
 }

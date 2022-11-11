@@ -114,9 +114,11 @@ const appendProducts = (data, cat) => {
       updateActive(id, cat, btn.innerText);
       if (e.target.innerText == "Active") {
         e.target.classList.add("status_inactive");
+        e.target.classList.remove("status_active");
         e.target.innerText = "Inactive";
       } else {
         e.target.classList.add("status_active");
+        e.target.classList.remove("status_inactive");
         e.target.innerText = "Active";
       }
     };
@@ -128,7 +130,6 @@ const appendProducts = (data, cat) => {
     del.append(del_icon);
     del_icon.onclick = (e) => {
       if (confirm("Press Ok! to Remove")) {
-        console.log("OK!");
         removeProduct(id, cat);
         e.target.parentNode.parentNode.remove();
       }

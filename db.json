@@ -1511,6 +1511,22 @@
       "password": "authhasan"
     }
   ],
+  "coupons": [
+    {
+      "code": "WINTERSALE20",
+      "description": "Winter Sale 2021",
+      "amount": 20,
+      "status": true,
+      "id": "U9w1GSK"
+    },
+    {
+      "code": "MASAI30",
+      "description": "Masai Special Offer",
+      "amount": 30,
+      "status": true,
+      "id": "U9w1PSK"
+    }
+  ],
   "user_login_details": [
     {
       "firstname": "sachin",
