@@ -21,6 +21,10 @@ body {
   cursor: pointer;
 }
 
+input:focus {
+  outline: 1px solid rgb(134, 130, 238);
+}
+
 /* custom Styles */
 
 #main_container {
@@ -65,15 +69,19 @@ body {
 
 #admin_icon_div {
   display: inline;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+#admin_icon_div > span {
+  width: 20px;
+  height: 20px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: violet;
-  color: white;
-  font-weight: bold;
-  width: 20px;
-  height: 20px;
-  padding: 20px;
   border-radius: 50%;
 }
 
@@ -144,6 +152,7 @@ body {
 
 #rhs_body h4 {
   font-weight: 500;
+  /* margin-bottom: 30px; */
 }
 
 /* Product page styles */
@@ -160,7 +169,7 @@ body {
   margin-right: 7px;
 }
 
-#products_page .action_div {
+.action_div {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
@@ -274,4 +283,96 @@ table tbody tr {
 }
 .btn:hover {
   background-color: whitesmoke;
+}
+
+#logout_drop {
+  display: none;
+  border: 1px solid #e5e7eb;
+  min-width: 200px;
+  height: auto;
+  background-color: white;
+  border-radius: 7px;
+  position: absolute;
+  right: 0;
+  top: 41px;
+  padding: 5px;
+  color: black;
+}
+
+#logout_drop span {
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+#admin_icon_div:hover #logout_drop {
+  display: block;
+}
+
+.icon_line {
+  display: flex;
+  padding: 5px 10px;
+  /* border: 1px solid #e5e7eb; */
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.icon_line:hover {
+  background-color: whitesmoke;
+}
+
+#logout_btn {
+  color: rgb(238, 68, 68);
+}
+
+/* ******************* */
+#orders_page h4 {
+  margin-bottom: 30px;
+}
+/* ******************* */
+
+/* customer Page table styling */
+#customers_page > table thead tr th:nth-child(1),
+#customers_page > table thead tr th:nth-child(2),
+#customers_page > table thead tr th:nth-child(3),
+#customers_page > table thead tr th:nth-child(5),
+#customers_page > table thead tr th:nth-child(6) {
+  width: 15%;
+  text-align: center;
+}
+#customers_page > table thead tr th:nth-child(4) {
+  width: 25%;
+}
+#customers_page > table tbody tr {
+  height: 30px;
+  text-align: center;
+}
+#customers_page > h4 {
+  margin-bottom: 30px;
+}
+
+/* Discount Page Styles */
+
+#discounts_page h4 {
+  margin-bottom: 30px;
+}
+
+#discounts_page tr > th:nth-child(1) {
+  /* background-color: red; */
+  width: 25%;
+}
+
+#discounts_page tr > th:nth-child(2) {
+  /* background-color: red; */
+  width: 25%;
+}
+
+#discounts_page tr > th:nth-child(2) ~ th {
+  /* background-color: red; */
+  table-layout: auto;
+  text-align: center;
+}
+
+#discounts_page tbody tr {
+  height: 40px;
 }

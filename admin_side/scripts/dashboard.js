@@ -8,9 +8,16 @@ let admin_user = JSON.parse(sessionStorage.getItem("admin_user")) || {};
 let admin_users;
 
 if (admin_user.username != undefined) {
-  document.getElementById("admin_icon_div").innerText =
+  document.querySelector("#admin_icon_div > span").innerText =
     admin_user.username[0].toUpperCase();
+  document.getElementById("username").innerText = admin_user.username;
 }
+
+let logout_btn = document.getElementById("logout_btn");
+logout_btn.onclick = () => {
+  sessionStorage.removeItem("admin_user");
+  location.href = "admin.html";
+};
 
 const getAdminUsers = async () => {
   try {
@@ -46,8 +53,6 @@ const getProductData = async (cat) => {
   try {
     let res = await fetch(`http://localhost:3000/${cat}`);
     let data = await res.json();
-
-    console.log(data);
     appendProducts(data, cat);
   } catch (err) {}
 };
@@ -109,9 +114,11 @@ const appendProducts = (data, cat) => {
       updateActive(id, cat, btn.innerText);
       if (e.target.innerText == "Active") {
         e.target.classList.add("status_inactive");
+        e.target.classList.remove("status_active");
         e.target.innerText = "Inactive";
       } else {
         e.target.classList.add("status_active");
+        e.target.classList.remove("status_inactive");
         e.target.innerText = "Active";
       }
     };
@@ -123,7 +130,6 @@ const appendProducts = (data, cat) => {
     del.append(del_icon);
     del_icon.onclick = (e) => {
       if (confirm("Press Ok! to Remove")) {
-        console.log("OK!");
         removeProduct(id, cat);
         e.target.parentNode.parentNode.remove();
       }

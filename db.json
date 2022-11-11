@@ -7,9 +7,9 @@
       "image": "https://www.sephora.com/productimages/sku/s2496453-main-Lhero.jpg?pb=2020-03-sephora-clean-2019",
       "rating": 2,
       "reviews": "8",
-      "price": 1999,
+      "price": 999,
       "brandName": "Dr. Dennis Gross Skincare",
-      "quantity": 50,
+      "quantity": 100,
       "description": "Dr. Dennis Gross Skincare - Mini Alpha Beta® Ultra Gentle Daily Peel for Sensitive Skin"
     },
     {
@@ -1509,6 +1509,45 @@
     {
       "username": "authhasan",
       "password": "authhasan"
+    }
+  ],
+  "coupons": [
+    {
+      "code": "WINTERSALE20",
+      "description": "Winter Sale 2021",
+      "amount": 20,
+      "status": true,
+      "id": "U9w1GSK"
+    },
+    {
+      "code": "MASAI30",
+      "description": "Masai Special Offer",
+      "amount": 30,
+      "status": true,
+      "id": "U9w1PSK"
+    }
+  ],
+  "user_login_details": [
+    {
+      "firstname": "sachin",
+      "lastname": "mishra",
+      "email": "sachin8583@gmail.com",
+      "password": "sachin123456",
+      "id": "U9w0GSK"
+    },
+    {
+      "firstname": "Ankul",
+      "lastname": "Kohli",
+      "email": "ankul8583@gmail.com",
+      "password": "ankul0000",
+      "id": "U3oJN_z"
+    },
+    {
+      "firstname": "sarfraz",
+      "lastname": "ali",
+      "email": "sarfraz8583@gmail.com",
+      "password": "sarfraz5555",
+      "id": "kOjdaZr"
     }
   ]
 }
