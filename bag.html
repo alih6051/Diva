@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cartDiv">
+
+    <div class="card p-2">
+        <div class="row">
+            <div class="col-3"  id="imgDiv">
+                <img height="80px" src="" alt="server error">
+            </div>
+            <div class="col-8" id="NameDiv">
+                <p></p>
+            </div>
+            <div class="col-1 p-0" id="remove">
+            <i class="fa fa-trash pe-2" ></i>
+            </div>
+        </div>
+        <hr> 
+        <div class="row">
+        <div class="col-6" >
+            <p id="Quant"></p>
+            <select id="Quantity">
+                <option value=all>Quantity: 1</option>
+                <option value=1>Quantity: 1</option>
+                <option value=2>Quantity: 2</option>
+                <option value=3>Quantity: 3</option>
+                <option value=4>Quantity: 4</option>
+                <option value=5>Quantity: 5</option>
+            </select>
+        </div>
+        <div class="col-6 text-end" id="PriceDiv">
+            <b></b>
+        </div>
+      </div>
+      </div>
+      <div class="card mt-3 p-2">
+        <h5>Price Details</h5>
+        <div class="row mt-3">
+            <div class="col-6">
+                <p>Bag MRP (<span id="totalQty"></span> items)</p>
+            </div>
+            <div class="col-6 text-end" id="totalPrice">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p>Bag Discount</p>
+            </div>
+            <div class="col-6 text-end">
+                ₹100
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p>Shipping</p>
+            </div>
+            <div class="col-6 text-end" >
+                <p id="shipping"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6" >
+                <h5 >You Pay</h5>
+            </div>
+            <div class="col-6 text-end">
+                <h5 id="Pay"></h5>
+            </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-6 mt-2">
+            <h4 id="finalPay"></h4>
+        </div>
+        <div class="col-6 text-end mt-2">
+            <button class="btn btn-danger">Proceed</button>
+        </div>
+      </div>
+        </div>
+</body>
+</html>
+<script type="module" src="./coordinated-crib-6423/scripts/bag.js"></script>
