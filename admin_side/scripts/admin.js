@@ -8,6 +8,7 @@ const getAdminUsers = async () => {
     let res = await fetch(`http://localhost:3000/admin_users`);
     let data = await res.json();
     admin_users = data;
+    console.log(admin_users);
   } catch (err) {
     console.log(err);
   }

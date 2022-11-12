@@ -5,17 +5,25 @@ const getCustomerData = async () => {
 };
 getCustomerData();
 
+// {
+//   "email": "rohit@gmail.com",
+//   "password": "123456",
+//   "phone": "9009909090",
+//   "name": "ROhit ",
+//   "id": "X2qZFAN"
+// }
+
 const appendCustomerData = (data) => {
   let customer_div = document.getElementById("customer_tbody");
   customer_div.innerHTML = "";
-  data.forEach(({ firstname, lastname, email, password, id }) => {
+  data.forEach(({ name, phone, email, password, id }) => {
     let tr = document.createElement("tr");
     let cus_id = document.createElement("td");
     cus_id.innerText = id;
-    let cus_firstName = document.createElement("td");
-    cus_firstName.innerText = firstname;
-    let cus_lastName = document.createElement("td");
-    cus_lastName.innerText = lastname;
+    let cus_name = document.createElement("td");
+    cus_name.innerText = name;
+    let cus_phone = document.createElement("td");
+    cus_phone.innerText = phone;
     let cus_email = document.createElement("td");
     cus_email.innerText = email;
     let cus_pass = document.createElement("td");
@@ -28,14 +36,7 @@ const appendCustomerData = (data) => {
       delete_user_data(id);
       e.target.parentNode.parentNode.remove();
     };
-    tr.append(
-      cus_id,
-      cus_firstName,
-      cus_lastName,
-      cus_email,
-      cus_pass,
-      cus_rem
-    );
+    tr.append(cus_id, cus_name, cus_phone, cus_email, cus_pass, cus_rem);
     customer_div.append(tr);
   });
 };
