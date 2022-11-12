@@ -117,3 +117,36 @@ const search_coupon_data = async (d) => {
   });
   couponsAppend(data);
 };
+
+// Adding Coupon Function
+let add_coupon_btn = document.getElementById("add_coupon");
+add_coupon_btn.onclick = async () => {
+  try {
+    let coupon_to_add = {
+      code: prompt("Enter the Coupon Code").toUpperCase(),
+      description: prompt("Enter the Coupon Description"),
+      amount: prompt("Enter the Discount Percentage"),
+      status: true,
+    };
+
+    if (
+      coupon_to_add.code == "" ||
+      coupon_to_add.description == "" ||
+      coupon_to_add.amount == ""
+    ) {
+      alert("Please Enter a Vaild Coupon Details");
+      return;
+    }
+
+    let res = await fetch(`http://localhost:3000/coupons`, {
+      method: "POST",
+      body: JSON.stringify(coupon_to_add),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    alert("Coupon Added Sucessfully");
+  } catch (err) {
+    console.log(err);
+  }
+};

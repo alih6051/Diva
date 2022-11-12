@@ -1,33 +1,7 @@
 import {isUser} from "./isUser.js";
 let firstDiv = document.getElementById("firstDiv");
 let secondDiv = document.getElementById("secondDiv");
-let LoginBtn = document.getElementById("LoginId");
-let registerBtn = document.getElementById("registerId");
-let emailProcess = document.getElementById("proceedToPass");
-let user_email = document.getElementById("emailId").value;
 
-let addNewUser = document.getElementById("register_User");
-addNewUser.onclick = async () => {
-let user_name = document.getElementById("user_name").value;
-let user_phone = document.getElementById("user_phone").value;
-let user_mail = document.getElementById("user_mail").value;
-let user_password = document.getElementById("user_password").value;
-
-let dataToUser = {
-    email: user_mail,
-    password: user_password,
-    phone: user_phone,
-    name: user_name,
-  };
-
-  let res = await fetch(`http://localhost:3000/user_login_details`, {
-    method: "POST",
-    body: JSON.stringify(dataToUser),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-  redirectIndex()
 }
 
 let user_data;

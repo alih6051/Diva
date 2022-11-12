@@ -1525,6 +1525,13 @@
       "amount": 30,
       "status": true,
       "id": "U9w1PSK"
+    },
+    {
+      "code": "MASAI20",
+      "description": "Masai Special 20",
+      "amount": "20",
+      "status": true,
+      "id": "TUTHi0m"
     }
   ],
   "user_login_details": [
@@ -1534,27 +1541,6 @@
       "phone": "9009909090",
       "name": "ROhit ",
       "id": "X2qZFAN"
-    },
-    {
-      "email": "werfwf@gmail.com",
-      "password": "123456",
-      "phone": "90909090",
-      "name": "Shyam",
-      "id": "dv7CdBM"
-    },
-    {
-      "email": "hell@gmail.com",
-      "password": "1234567",
-      "phone": "909090900",
-      "name": "Hell",
-      "id": "lP-Elgh"
-    },
-    {
-      "email": "yup@gmail.com",
-      "password": "12345678",
-      "phone": "9090909009",
-      "name": "Yup",
-      "id": "I3LsHo1"
     }
   ]
 }

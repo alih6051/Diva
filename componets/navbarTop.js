@@ -1,7 +1,5 @@
 const navbarTop = () => {
-    return `<nav class="navbar navbar-expand-md navbar-light bg-white navbar-bottom-line">
-    <div class="container">
-      <a class="navbar-brand" href="./index.html">
+
       <img src="./assets/logo.png" alt="" height="30px">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -360,12 +358,14 @@ const navbarTop = () => {
 </div>
   </div>
 </div>
-  `
-}
+  `;
+};
 
 export default navbarTop;
-{/* <span class="ps-3 pt-1"><img src="./resouces/images/user.png" alt="" height="20px;"></span>
-<span class="pt-2 ps-1">Account</span> */}
-$(document).ready(function(){
-  $('[data-bs-toggle="popover"]').popover();  
+{
+  /* <span class="ps-3 pt-1"><img src="./resouces/images/user.png" alt="" height="20px;"></span>
+<span class="pt-2 ps-1">Account</span> */
+}
+$(document).ready(function () {
+  $('[data-bs-toggle="popover"]').popover();
 });

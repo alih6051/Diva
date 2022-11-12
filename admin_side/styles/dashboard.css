@@ -376,3 +376,7 @@ table tbody tr {
 #discounts_page tbody tr {
   height: 40px;
 }
+
+#add_coupon span {
+  padding-left: 7px;
+}
