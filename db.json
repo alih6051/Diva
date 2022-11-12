@@ -1529,25 +1529,32 @@
   ],
   "user_login_details": [
     {
-      "firstname": "sachin",
-      "lastname": "mishra",
-      "email": "sachin8583@gmail.com",
-      "password": "sachin123456",
-      "id": "U9w0GSK"
+      "email": "rohit@gmail.com",
+      "password": "123456",
+      "phone": "9009909090",
+      "name": "ROhit ",
+      "id": "X2qZFAN"
     },
     {
-      "firstname": "Ankul",
-      "lastname": "Kohli",
-      "email": "ankul8583@gmail.com",
-      "password": "ankul0000",
-      "id": "U3oJN_z"
+      "email": "werfwf@gmail.com",
+      "password": "123456",
+      "phone": "90909090",
+      "name": "Shyam",
+      "id": "dv7CdBM"
     },
     {
-      "firstname": "sarfraz",
-      "lastname": "ali",
-      "email": "sarfraz8583@gmail.com",
-      "password": "sarfraz5555",
-      "id": "kOjdaZr"
+      "email": "hell@gmail.com",
+      "password": "1234567",
+      "phone": "909090900",
+      "name": "Hell",
+      "id": "lP-Elgh"
+    },
+    {
+      "email": "yup@gmail.com",
+      "password": "12345678",
+      "phone": "9090909009",
+      "name": "Yup",
+      "id": "I3LsHo1"
     }
   ]
 }
