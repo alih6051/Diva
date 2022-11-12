@@ -61,6 +61,10 @@
 .sign-in-design>a {
   color: rgb(252, 39, 121);
 }
+.image-cart {
+  height: 80px;
+  width: 80px;
+}
 /* .grandTotal {
   display: flex;
   flex-direction: row;

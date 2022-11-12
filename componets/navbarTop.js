@@ -296,36 +296,17 @@ const navbarTop = () => {
 
   
   <div class="offcanvas-body">
-  <div class="card p-2">
-  <div class="row">
-      <div class="col-3">
-          <img height="80px" src="https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/7/3/73116948904052451471_1.jpg" alt="">
-      </div>
-      <div class="col-8">
-          <p>Colorbar Powerkiss Vegan Matte Lipcolor - Charmer</p>
-      </div>
-      <div class="col-1 p-0">
-      <i class="fa fa-trash pe-2"></i>
-      </div>
-  </div>
-  <hr> 
-  <div class="row">
-  <div class="col-6">
-      <p>Quantity: 1</p>
-  </div>
-  <div class="col-6 text-end">
-      <b>₹70</b>
-  </div>
-</div>
-</div>
+
+  <div id="cartSection"></div>
+  <div id="totalPrice"></div>
+
 <div class="card mt-3 p-2">
   <h5>Price Details</h5>
   <div class="row mt-3">
       <div class="col-6">
           <p>Bag MRP (1 items)</p>
       </div>
-      <div class="col-6 text-end">
-          ₹499
+      <div class="col-6 text-end" id="totalMrp">
       </div>
   </div>
   <div class="row">
@@ -333,7 +314,7 @@ const navbarTop = () => {
           <p>Bag Discount</p>
       </div>
       <div class="col-6 text-end">
-          ₹100
+          0
       </div>
   </div>
   <div class="row">
@@ -341,21 +322,21 @@ const navbarTop = () => {
           <p>Shipping</p>
       </div>
       <div class="col-6 text-end">
-          ₹70
+          0
       </div>
   </div>
   <div class="row">
       <div class="col-6">
           <h5>You Pay</h5>
       </div>
-      <div class="col-6 text-end">
-          <h5>₹569</h5>
+      <div class="col-6 text-end" >
+          <h5 id="finalMrp"></h5>
       </div>
   </div>
 </div>
 <div class="row mt-3">
   <div class="col-6 mt-2">
-      <h4>₹459</h4>
+      <h4 id="payAmount">₹459</h4>
   </div>
   <div class="col-6 text-end mt-2">
       <button class="btn btn-danger">Proceed</button>
