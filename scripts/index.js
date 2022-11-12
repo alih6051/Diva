@@ -46,8 +46,10 @@ let container=document.getElementById("cartSection");
 let totalMrp =document.getElementById("totalMrp");
 let finalMrp = document.getElementById("finalMrp")
 let payAmount = document.getElementById("payAmount")
+let cartCount =  document.getElementById("cartCount")
 
 function cartData(data) {
+  cartCount.innerText = data.length;
   let total =0;
  container.innerHTML=null;
   data.forEach((el)=>{ 

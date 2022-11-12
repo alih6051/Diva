@@ -279,8 +279,8 @@ const navbarTop = () => {
           <b class='sign-in-design'><a href='admin_side/admin.html'>Sign in With Admin <i class='fa fa-arrow-right'></i></a></b>
           </div>">Sign In</button>
          
-          <span class="position-absolute start-97 translate-middle badge rounded-pill bg-danger"> 
-          9 <span class="visually-hidden">unread messages</span>
+          <span class="position-absolute start-97 translate-middle badge rounded-pill bg-danger" id="cartCount"> 
+           <span class="visually-hidden">unread messages</span>
           </span>
           <span class="pe-4 ps-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="./resouces/images/shopping-bag.png" alt="" height="36px;"></span>
         </form>
@@ -339,7 +339,7 @@ const navbarTop = () => {
       <h4 id="payAmount">₹459</h4>
   </div>
   <div class="col-6 text-end mt-2">
-      <button class="btn btn-danger">Proceed</button>
+      <button class="btn btn-danger" id="Proceed">Proceed</button>
   </div>
 </div>
   </div>

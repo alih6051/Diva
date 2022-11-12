@@ -16,7 +16,11 @@ let footer_term1=document.getElementById("footer_term");
 footer_term1.innerHTML=footer_term();
 let Delivery_footer=document.getElementById("footer-1");
 Delivery_footer.innerHTML=footer_delivery()
+let bag=JSON.parse(localStorage.getItem("ADD_TO_CART"));
+let cartCount =  document.getElementById("cartCount")
+ cartCount.innerText = bag.length;
 
+ 
 
 const Skin_product=async() =>{
     try{
