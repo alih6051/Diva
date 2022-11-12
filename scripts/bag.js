@@ -70,7 +70,35 @@ price.innerText="₹"+(el.price)
 PriceJOIN(bag)
 
 
+let PriceArr=[]
+let ExactPrice=0
+let Quantity=document.getElementById("Quantity")
 
+Quantity.addEventListener("change",function(){
+  quantProduct(bag)
+})
+
+function quantProduct(data){
+  let Quant=document.getElementById("Quantity").value 
+  console.log(Quant)
+  if(Quant==="1"){
+    
+   function PriceJOIN (data) {
+
+
+  container2.innerHTML=null;
+    data.forEach((el)=>{ 
+
+      let price=document.createElement("b");
+      ExactPrice+=(el.price)*1
+      console.log(ExactPrice)
+      price.innerText="₹"+ExactPrice
+
+      container2.append(price)
+  })
+}
+}
+}
 // let RemovePro=document.getElementById("remove");
 // RemovePro.addEventListener("click",function(){
 //     RemoveProduct()
@@ -83,6 +111,8 @@ PriceJOIN(bag)
 //   }
 // }
 // RemoveProduct(bag)
+
+
 
 
 let TotalCount=document.getElementById("totalQty");
