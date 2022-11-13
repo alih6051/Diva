@@ -1,69 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HairProduct</title>
-    <link rel="stylesheet" href="./HairProduct.css">
-    
-</head>
-<body>
+    <link rel="stylesheet" href="./HairProduct.css" />
+  </head>
+  <body>
     <h3>Hair Care Range</h3>
     <h3>All Products</h3>
     <div id="All_Products">
-         <div id="FUNCTIONS">
-           
-          
-          <select id="SORT" class="form-control">
-            <option value="all">SORT BY : PRICE</option>
-            <option value="Low">Low to High</option>
-            <option value="High">High to Low</option>
-          </select>
-         <br>
-          <select id="SortByRating" class="form-control">
-            <option value="all">SORT BY : RATING</option>
-            <option value="Low">Low to High</option>
-            <option value="High">High to Low</option>
-          </select>
-         <br>
-          <select id="SortByReview" class="form-control">
-            <option value="all">SORT BY : REVIEW</option>
-            <option value="Low">Low to High</option>
-            <option value="High">High to Low</option>
-          </select>
-         <br>
-          <select id="FilterByBrand" class="form-control">
-            <option value="all">BRAND NAME</option>
-            <option value="1">Briogeo</option>
-            <option value="2">The Ordinary</option>
-            <option value="3">Pureology</option>
-            <option value="4">Oribe</option>
-            <option value="5">Living Proof</option>
-            <option value="6">OUAI</option>
-            <option value="7">Fable & Mane</option>
-            <option value="8">dae</option>
-            <option value="9">Gisou</option>
-            <option value="10">Kérastase</option>
-            <option value="11">Sol de Janeiro</option>
-            <option value="12">K18 Biomimetic Hairscience</option>
-          </select>
-         <br>
-          <select id="FilterByPrice" class="form-control">
-            <option value="all">PRICE</option>
-            <option value="1">Less than Rs 999</option>
-            <option value="2">Less than Rs 1499</option>
-            <option value="3">Less than Rs 2999</option>
-            <option value="4">More than Rs 2999</option>
-          </select>
-
-              
-         </div>
-         <div id="Products"></div>
-         
+      <div id="FUNCTIONS">
+        <select id="SORT" class="form-select">
+          <option value="all">SORT BY : PRICE</option>
+          <option value="Low">Low to High</option>
+          <option value="High">High to Low</option>
+        </select>
+        <br />
+        <select id="SortByRating" class="form-select">
+          <option value="all">SORT BY : RATING</option>
+          <option value="Low">Low to High</option>
+          <option value="High">High to Low</option>
+        </select>
+        <br />
+        <select id="SortByReview" class="form-select">
+          <option value="all">SORT BY : REVIEW</option>
+          <option value="Low">Low to High</option>
+          <option value="High">High to Low</option>
+        </select>
+        <br />
+        <select id="FilterByBrand" class="form-select">
+          <option value="all">BRAND NAME</option>
+          <option value="1">Briogeo</option>
+          <option value="2">The Ordinary</option>
+          <option value="3">Pureology</option>
+          <option value="4">Oribe</option>
+          <option value="5">Living Proof</option>
+          <option value="6">OUAI</option>
+          <option value="7">Fable & Mane</option>
+          <option value="8">dae</option>
+          <option value="9">Gisou</option>
+          <option value="10">Kérastase</option>
+          <option value="11">Sol de Janeiro</option>
+          <option value="12">K18 Biomimetic Hairscience</option>
+        </select>
+        <br />
+        <select id="FilterByPrice" class="form-select">
+          <option value="all">PRICE</option>
+          <option value="1">Less than Rs 999</option>
+          <option value="2">Less than Rs 1499</option>
+          <option value="3">Less than Rs 2999</option>
+          <option value="4">More than Rs 2999</option>
+        </select>
+      </div>
+      <div id="Products"></div>
     </div>
-    
+
     <div id="footer_btn"></div>
-</body>
+  </body>
 </html>
 <script type="module" src="./HairProduct.js"></script>
