@@ -1,108 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SkinProduct</title>
-    <link rel="stylesheet" href="./styles/SkinProduct.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/offerSection.css">
-    <link rel="stylesheet" href="./styles/navbar.css">
-    <link rel="stylesheet" href="./styles/navbar.css">
-    <link rel="stylesheet" href="./styles/homepage.css">
-    <link rel="stylesheet" href="./styles/footer_term.css">
-    <link rel="stylesheet" href="./styles/main.css">
-</head>
-<body>
-  <div class="fixed-top">
-    <div id="stick_section"></div>
-    <div id="navbar_top"></div>
+    <link rel="stylesheet" href="./styles/SkinProduct.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/offerSection.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/homepage.css" />
+    <link rel="stylesheet" href="./styles/footer_term.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div class="fixed-top">
+      <div id="stick_section"></div>
+      <div id="navbar_top"></div>
     </div>
     <div id="navbarBottom"></div>
-    <div id="carouselSkinProduct" class="carousel slide slider-width" data-bs-ride="carousel">
+    <div
+      id="carouselSkinProduct"
+      class="carousel slide slider-width"
+      data-bs-ride="carousel"
+    >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://images-static.nykaa.com/uploads/1b665083-321b-4220-b3f7-a97fe956a528.jpg?tr=w-1200,cm-pad_resize" class="d-block w-100" alt="...">
+          <img
+            src="https://images-static.nykaa.com/uploads/1b665083-321b-4220-b3f7-a97fe956a528.jpg?tr=w-1200,cm-pad_resize"
+            class="d-block w-100"
+            alt="..."
+          />
         </div>
         <div class="carousel-item">
-          <img src="https://images-static.nykaa.com/uploads/1e5a00ce-7648-4f1d-9780-cab99096884b.jpg?tr=w-1200,cm-pad_resize" class="d-block w-100" alt="...">
+          <img
+            src="https://images-static.nykaa.com/uploads/1e5a00ce-7648-4f1d-9780-cab99096884b.jpg?tr=w-1200,cm-pad_resize"
+            class="d-block w-100"
+            alt="..."
+          />
         </div>
         <div class="carousel-item">
-          <img src="https://images-static.nykaa.com/uploads/2e28e588-6193-4f6d-b9d2-09a33395d61e.jpg?tr=w-1200,cm-pad_resize" class="d-block w-100" alt="...">
+          <img
+            src="https://images-static.nykaa.com/uploads/2e28e588-6193-4f6d-b9d2-09a33395d61e.jpg?tr=w-1200,cm-pad_resize"
+            class="d-block w-100"
+            alt="..."
+          />
         </div>
         <div class="carousel-item">
-          <img src="https://images-static.nykaa.com/uploads/6a042b1f-1156-4646-aebf-978f66ae90d8.jpg?tr=w-1200,cm-pad_resize" class="d-block w-100" alt="...">
+          <img
+            src="https://images-static.nykaa.com/uploads/6a042b1f-1156-4646-aebf-978f66ae90d8.jpg?tr=w-1200,cm-pad_resize"
+            class="d-block w-100"
+            alt="..."
+          />
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselSkinProduct" data-bs-slide="prev">
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselSkinProduct"
+        data-bs-slide="prev"
+      >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselSkinProduct" data-bs-slide="next">
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselSkinProduct"
+        data-bs-slide="next"
+      >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
 
-
     <h3>Skin Care Range</h3>
     <h3>All Products</h3>
     <div id="All_Products">
-         <div id="FUNCTIONS">
-          
-          <select id="SORT" class="SELECTTAG">
-            <option value="all">SORT BY : PRICE</option>
-            <option value="Low">Low to High</option>
-            <option value="High">High to Low</option>
-          </select>
-          
-          <select id="SortByRating" class="SELECTTAG">
-            <option value="all">SORT BY : RATING</option>
-            <option value="Low">Low to High</option>
-            <option value="High">High to Low</option>
-          </select>
-         
-          <select id="SortByReview" class="SELECTTAG">
-            <option value="all">SORT BY : REVIEW</option>
-            <option value="Low">Low to High</option>
-            <option value="High">High to Low</option>
-          </select>
-          
-          <select id="FilterByBrand" class="SELECTTAG">
-            <option value="all">BRAND</option>
-            <option value="1">TULA SKINCARE</option>
-            <option value="2">Dr. DENNIS SKINCARE</option>
-            <option value="3">REN CLEAN SKINCARE</option>
-            <option value="4">Dr. BRANDT SKINCARE</option>
-          </select>
-        
-          <select id="FilterByPrice" class="SELECTTAG">
-            <option value="all">PRICE</option>
-            <option value="1">Less than 999</option>
-            <option value="2">Less than 1499</option>
-            <option value="3">Less than 2999</option>
-            <option value="4">More than 2999</option>
-          </select>
+      <div id="FUNCTIONS">
+        <select id="SORT" class="SELECTTAG">
+          <option value="all">SORT BY : PRICE</option>
+          <option value="Low">Low to High</option>
+          <option value="High">High to Low</option>
+        </select>
 
+        <select id="SortByRating" class="SELECTTAG">
+          <option value="all">SORT BY : RATING</option>
+          <option value="Low">Low to High</option>
+          <option value="High">High to Low</option>
+        </select>
 
-         </div>
-         <div id="Products"></div>
-         
+        <select id="SortByReview" class="SELECTTAG">
+          <option value="all">SORT BY : REVIEW</option>
+          <option value="Low">Low to High</option>
+          <option value="High">High to Low</option>
+        </select>
+
+        <select id="FilterByBrand" class="SELECTTAG">
+          <option value="all">BRAND</option>
+          <option value="1">TULA SKINCARE</option>
+          <option value="2">Dr. DENNIS SKINCARE</option>
+          <option value="3">REN CLEAN SKINCARE</option>
+          <option value="4">Dr. BRANDT SKINCARE</option>
+        </select>
+
+        <select id="FilterByPrice" class="SELECTTAG">
+          <option value="all">PRICE</option>
+          <option value="1">Less than 999</option>
+          <option value="2">Less than 1499</option>
+          <option value="3">Less than 2999</option>
+          <option value="4">More than 2999</option>
+        </select>
+      </div>
+      <div id="Products"></div>
     </div>
-    
+
     <div id="footer_btn"></div>
 
     <div id="footer"></div>
-    <div id="footer-1"></div> 
+    <div id="footer-1"></div>
     <!-- footerTerm&Condition Part -->
     <div id="footer_term"></div>
-</body>
+  </body>
 </html>
 <script type="module" src="./scripts/SkinProduct.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script type="module" src="./scripts/index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+  integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+  crossorigin="anonymous"
+></script>
 <script type="module" src="././Products_page/skin_Product/skin.js"></script>
