@@ -271,18 +271,31 @@ const navbarTop = () => {
         </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search on Diva" aria-label="Search">
-          <button type="button" class="btn btn-danger w-50" data-bs-toggle="popover" data-bs-html="true" 
+        <input class="form-control me-2" type="search" placeholder="Search on Diva" aria-label="Search">
+
+        <button id="sign_btn" type="button" class="btn btn-danger w-50" data-bs-toggle="popover" data-bs-html="true" 
           data-bs-content="<div><h5>Login / Create Account</h5>
           <p>Register now and get 2000 Nykaa reward points instantly!</p>
           <b class='sign-in-design'><a href='login.html'>Sign in With Email <i class='fa fa-arrow-right'></i></a></b><br>
           <b class='sign-in-design'><a href='admin_side/admin.html'>Sign in With Admin <i class='fa fa-arrow-right'></i></a></b>
-          </div>">Sign In</button>
+          </div>">
+          Sign In
+        </button>
+
+        <div id="account_div" style="display: none";>   
+          <span class="ps-3 pt-1"><img src="./resouces/images/user.png" alt="" height="20px;"></span>
+          <span id="login_user_name" class="pt-2 ps-1">Account</span>
+        </div> 
          
+        <div style="border: 1px solid red";>
           <span class="position-absolute start-97 translate-middle badge rounded-pill bg-danger" id="cartCount"> 
-           <span class="visually-hidden">unread messages</span>
+           0
           </span>
-          <span class="pe-4 ps-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="./resouces/images/shopping-bag.png" alt="" height="36px;"></span>
+          <span class="pe-4 ps-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <img src="./resouces/images/shopping-bag.png" alt="" height="36px;">
+          </span>
+        </div>
+
         </form>
       </div>
     </div>
@@ -349,8 +362,12 @@ const navbarTop = () => {
 
 export default navbarTop;
 {
-  /* <span class="ps-3 pt-1"><img src="./resouces/images/user.png" alt="" height="20px;"></span>
-<span class="pt-2 ps-1">Account</span> */
+  /*
+<div style="border: 3px solid black";>   
+  <span class="ps-3 pt-1"><img src="./resouces/images/user.png" alt="" height="20px;"></span>
+  <span class="pt-2 ps-1">Account</span>
+</div>   
+  */
 }
 $(document).ready(function () {
   $('[data-bs-toggle="popover"]').popover();
