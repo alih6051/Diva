@@ -9,5 +9,23 @@
 body {
   font-family: "Inter", sans-serif;
 }
-
-
+.slider-width {
+  display: flex;
+  width: 80% !important;
+  margin: 30px auto !important;
+}
+.product-image {
+  height: 100px;
+}
+.product-content {
+  height: 125px;
+}
+/* .user_name {
+  display: inline-flex !important;
+} */
+#logoutMenu {
+  top: 40px;
+}
+#footer_btn {
+  text-align: center;
+}

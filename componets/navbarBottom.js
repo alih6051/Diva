@@ -64,7 +64,7 @@ const navbarBottom = () => {
         </ul>				
       </li>
       <li class="dropdown mega-dropdown">
-      <a href="./Products_page/skin_Product/skin.html" class="navbarBottomMenu">Skin <span class="caret"></span></a>				
+      <a href="../SkinProduct.html" class="navbarBottomMenu">Skin <span class="caret"></span></a>				
       <ul class="dropdown-menu mega-dropdown-menu">
       <div class="row">
       <li class="col-sm-2">
@@ -157,7 +157,7 @@ const navbarBottom = () => {
       </ul>				
     </li>
     <li class="dropdown mega-dropdown">
-        <a href="./Products_page/Hair_Product/hair.html" class="navbarBottomMenu">Hair <span class="caret"></span></a>				
+        <a href="../HairProduct.html" class="navbarBottomMenu">Hair <span class="caret"></span></a>				
         <ul class="dropdown-menu mega-dropdown-menu">
         <div class="row">
         <li class="col-sm-2">
@@ -577,7 +577,7 @@ const navbarBottom = () => {
                 </ul>				
                 </li>
                 <li class="dropdown mega-dropdown">
-                <a href="#" class="navbarBottomMenu">Fragrance<span class="caret"></span></a>				
+                <a href="./frag.html" class="navbarBottomMenu">Fragrance<span class="caret"></span></a>				
                 <ul class="dropdown-menu mega-dropdown-menu">
                 <div class="row">
                 <li class="col-sm-2">
