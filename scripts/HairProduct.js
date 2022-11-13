@@ -93,16 +93,16 @@ const appendProducts=(data)=>{
 
   data.forEach((el)=>{
     let div=document.createElement("div");
-    div.setAttribute("class","SkinProduct")
+    div.setAttribute("class","card p-3 shadow")
 
     let div_Image=document.createElement("div");
-    div_Image.setAttribute("class","div_img")
     let image=document.createElement("img");
     image.src=el.image;
+    image.setAttribute("class","product-image")
     div_Image.append(image)
 
     let div_mid=document.createElement("div");
-    div_mid.setAttribute("class","div_mid")
+    div_mid.setAttribute("class","product-content ")
     let Pro_name=document.createElement("p");
     Pro_name.textContent=el.productName;
     Pro_name.setAttribute("class","Pro_Name")
@@ -116,12 +116,11 @@ const appendProducts=(data)=>{
     div_mid.append(Pro_name,Price)
 
     let div_View_btn=document.createElement("div");
-    div_View_btn.setAttribute("class","div_View_btn")
 
 
     let View_btn=document.createElement("button")
     View_btn.innerText="Add to Bag"
-    View_btn.setAttribute("class","View_Btn")
+    View_btn.setAttribute("class","btn btn-danger w-100")
     
     if(el.active===true){
       View_btn.addEventListener("click",function(){

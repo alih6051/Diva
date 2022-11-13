@@ -64,12 +64,13 @@ const appendProducts=(data)=>{
 
   data.forEach((el)=>{
     let div=document.createElement("div");
-    div.setAttribute("class","SkinProduct")
+    div.setAttribute("class","card p-3")
 
     let div_Image=document.createElement("div");
     div_Image.setAttribute("class","div_img")
     let image=document.createElement("img");
     image.src=el.image;
+    image.setAttribute("class","product-image")
     div_Image.append(image)
 
     let div_mid=document.createElement("div");

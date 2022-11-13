@@ -14,7 +14,7 @@ body {
 }
 #All_Products{
     display: flex;
-    width: 70%;
+    width: 80%;
     margin: auto;
     gap: 20px;
 }
@@ -23,6 +23,7 @@ div#FUNCTIONS{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    margin-right: 30px;
     
 }
 #Products{
@@ -31,17 +32,6 @@ div#FUNCTIONS{
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
     cursor: pointer;
-}
-#Products>div{
-    background-color: white;
-    border-radius: 5px;
-    padding: 30px 10px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-}
-
-#Products img{
-    width: 75%;
-    height: 100px;
 }
 .Pro_Name{
     padding-top: 10px;

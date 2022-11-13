@@ -14,5 +14,10 @@ body {
   width: 80% !important;
   margin: 30px auto !important;
 }
-
+.product-image {
+  height: 100px;
+}
+.product-content {
+  height: 125px;
+}
 
