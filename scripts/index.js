@@ -84,13 +84,17 @@ function cartData(data) {
     hr.setAttribute("class", "mt-2");
     let quantity = document.createElement("select");
     quantity.setAttribute("class", "col-5 text-start");
-    quantity.innerHTML =
-      "<option value='1'>Quantity 1</option><option value='2'>Quantity 2</option><option value='3'>Quantity 3</option><option value='4'>Quantity 4</option><option value='5'>Quantity 5</option>";
+    quantity.innerHTML = `<option value='1'>Quantity 1</option><option value='2'>Quantity 2</option><option value='3'>Quantity 3</option><option value='4'>Quantity 4</option><option value='5'>Quantity 5</option>`;
+    quantity.value = `${data.quant[i]}`;
+    quantity.onchange = (e) => {
+      handleQuantity(i, e.target.value);
+    };
+
     let price = document.createElement("b");
     price.setAttribute("class", "col-7 text-end");
     let total_price = el.price * data.quant[i];
     price.innerText = "₹" + total_price;
-    total += el.price;
+    total += total_price;
     div2.append(image, name, icon, hr, quantity, price);
     div.append(div2);
     let div3 = document.createElement("div");
@@ -102,6 +106,12 @@ function cartData(data) {
   payAmount.innerText = total;
 }
 cartData(bag);
+
+const handleQuantity = (i, val) => {
+  bag.quant[i] = +val;
+  localStorage.setItem("ADD_TO_CART", JSON.stringify(bag));
+  cartData(bag);
+};
 
 const handleItemRemove = (i) => {
   bag.items.splice(i, 1);
