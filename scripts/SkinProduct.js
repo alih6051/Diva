@@ -8,6 +8,11 @@ let stick_section = document.getElementById("stick_section");
 let navbarDiv = document.getElementById("navbar_top");
 let navbarBottomDiv = document.getElementById("navbarBottom");
 
+let cart_dummy = {
+  items: [],
+  quant: [],
+};
+
 stick_section.innerHTML = stickOfferSection();
 navbarDiv.innerHTML = navbarTop();
 navbarBottomDiv.innerHTML = navbarBottom();
@@ -15,9 +20,9 @@ let footer_term1 = document.getElementById("footer_term");
 footer_term1.innerHTML = footer_term();
 let Delivery_footer = document.getElementById("footer-1");
 Delivery_footer.innerHTML = footer_delivery();
-let bag = JSON.parse(localStorage.getItem("ADD_TO_CART"));
+let bag = JSON.parse(localStorage.getItem("ADD_TO_CART")) || cart_dummy;
 let cartCount = document.getElementById("cartCount");
-cartCount.innerText = bag.length;
+cartCount.innerText = bag.items.length;
 
 const Skin_product = async () => {
   try {
@@ -106,6 +111,7 @@ const appendProducts = (data) => {
       View_btn.addEventListener("click", function () {
         console.log("HI");
         AddToCart(el);
+        location.reload();
       });
     } else {
       alert("Product is not available");
@@ -123,10 +129,14 @@ const appendProducts = (data) => {
   });
 };
 
+// Add to Cart Function
+
 const AddToCart = (el) => {
-  let SKINPRODUCT = JSON.parse(localStorage.getItem("ADD_TO_CART")) || [];
-  SKINPRODUCT.push(el);
-  localStorage.setItem("ADD_TO_CART", JSON.stringify(SKINPRODUCT));
+  let current_cart =
+    JSON.parse(localStorage.getItem("ADD_TO_CART")) || cart_dummy;
+  current_cart.items.push(el);
+  current_cart.quant.push(1);
+  localStorage.setItem("ADD_TO_CART", JSON.stringify(current_cart));
 };
 
 // Price Sorting

@@ -16,9 +16,12 @@ footer_term1.innerHTML = footer_term();
 let Delivery_footer = document.getElementById("footer-1");
 Delivery_footer.innerHTML = footer_delivery();
 
-let bag = JSON.parse(localStorage.getItem("ADD_TO_CART"));
+let bag = JSON.parse(localStorage.getItem("ADD_TO_CART")) || {
+  items: [],
+  quant: [],
+};
 let cartCount = document.getElementById("cartCount");
-cartCount.innerText = bag.length;
+cartCount.innerText = bag.items.length;
 
 const Hair_product = async () => {
   try {
@@ -114,6 +117,7 @@ const appendProducts = (data) => {
       View_btn.addEventListener("click", function () {
         console.log("HI");
         AddToCart(el);
+        location.reload();
       });
     } else {
       alert("Product is not available");
@@ -127,12 +131,17 @@ const appendProducts = (data) => {
   });
 };
 
-const AddToCart = (el) => {
-  let HAIRPRODUCT = JSON.parse(localStorage.getItem("ADD_TO_CART")) || [];
-  HAIRPRODUCT.push(el);
-  localStorage.setItem("ADD_TO_CART", JSON.stringify(HAIRPRODUCT));
-};
+// Add to Cart Function
 
+const AddToCart = (el) => {
+  let current_cart = JSON.parse(localStorage.getItem("ADD_TO_CART")) || {
+    items: [],
+    quant: [],
+  };
+  current_cart.items.push(el);
+  current_cart.quant.push(1);
+  localStorage.setItem("ADD_TO_CART", JSON.stringify(current_cart));
+};
 // Price Sorting
 
 let Sort = document.getElementById("SORT");

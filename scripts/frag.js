@@ -16,9 +16,12 @@ footer_term1.innerHTML = footer_term();
 let Delivery_footer = document.getElementById("footer-1");
 Delivery_footer.innerHTML = footer_delivery();
 
-let bag = JSON.parse(localStorage.getItem("ADD_TO_CART"));
+let bag = JSON.parse(localStorage.getItem("ADD_TO_CART")) || {
+  items: [],
+  quant: [],
+};
 let cartCount = document.getElementById("cartCount");
-cartCount.innerText = bag.length;
+cartCount.innerText = bag.items.length;
 
 const Frag_product = async () => {
   try {
@@ -118,7 +121,7 @@ const appendProducts = (data) => {
         let newQuantity = el.quantity - count;
         console.log(newQuantity);
         AddToCart(el);
-        QuantityCart(newQuantity);
+        location.reload();
       });
     } else {
       alert("Product is not available");
@@ -132,16 +135,16 @@ const appendProducts = (data) => {
   });
 };
 
-const AddToCart = (el) => {
-  let FRAGPRODUCT = JSON.parse(localStorage.getItem("ADD_TO_CART")) || [];
-  FRAGPRODUCT.push(el);
-  localStorage.setItem("ADD_TO_CART", JSON.stringify(FRAGPRODUCT));
-};
+// Add to Cart Function
 
-const QuantityCart = (Q) => {
-  let FragQuantity = JSON.parse(localStorage.getItem("Quantity_Cart")) || [];
-  FragQuantity.push(Q);
-  localStorage.setItem("Quantity_Cart", JSON.stringify(FragQuantity));
+const AddToCart = (el) => {
+  let current_cart = JSON.parse(localStorage.getItem("ADD_TO_CART")) || {
+    items: [],
+    quant: [],
+  };
+  current_cart.items.push(el);
+  current_cart.quant.push(1);
+  localStorage.setItem("ADD_TO_CART", JSON.stringify(current_cart));
 };
 
 // Price Sorting
