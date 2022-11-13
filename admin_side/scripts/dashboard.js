@@ -21,7 +21,7 @@ logout_btn.onclick = () => {
 
 const getAdminUsers = async () => {
   try {
-    let res = await fetch(`http://localhost:3000/admin_users`);
+    let res = await fetch(`https://diva-mock-server.onrender.com/admin_users`);
     let data = await res.json();
     admin_users = data;
     if (!isAdmin(admin_user.username, admin_user.password, admin_users)) {
@@ -51,7 +51,7 @@ link_items.forEach((el, i) => {
 const getProductData = async (cat) => {
   localStorage.setItem("active_cat", cat);
   try {
-    let res = await fetch(`http://localhost:3000/${cat}`);
+    let res = await fetch(`https://diva-mock-server.onrender.com/${cat}`);
     let data = await res.json();
     appendProducts(data, cat);
   } catch (err) {}
@@ -146,7 +146,7 @@ const updateInvetory = async (id, cat, new_quantity) => {
     quantity: new_quantity,
   };
 
-  let res = await fetch(`http://localhost:3000/${cat}/${id}`, {
+  let res = await fetch(`https://diva-mock-server.onrender.com/${cat}/${id}`, {
     method: "PATCH",
     body: JSON.stringify(data),
     headers: {
@@ -161,7 +161,7 @@ const updatePrice = async (id, cat, new_price) => {
   let dataToSent = {
     price: new_price,
   };
-  let res = await fetch(`http://localhost:3000/${cat}/${id}`, {
+  let res = await fetch(`https://diva-mock-server.onrender.com/${cat}/${id}`, {
     method: "PATCH",
     body: JSON.stringify(dataToSent),
     headers: {
@@ -177,25 +177,31 @@ const updateActive = async (id, cat, btn_text) => {
     let dataToSend = {
       active: false,
     };
-    let res = await fetch(`http://localhost:3000/${cat}/${id}`, {
-      method: "PATCH",
-      body: JSON.stringify(dataToSend),
-      headers: {
-        "Content-type": "application/json",
-      },
-    });
+    let res = await fetch(
+      `https://diva-mock-server.onrender.com/${cat}/${id}`,
+      {
+        method: "PATCH",
+        body: JSON.stringify(dataToSend),
+        headers: {
+          "Content-type": "application/json",
+        },
+      }
+    );
     let data = await res.json();
   } else {
     let dataToSend2 = {
       active: true,
     };
-    let resagain = await fetch(`http://localhost:3000/${cat}/${id}`, {
-      method: "PATCH",
-      body: JSON.stringify(dataToSend2),
-      headers: {
-        "Content-type": "application/json",
-      },
-    });
+    let resagain = await fetch(
+      `https://diva-mock-server.onrender.com/${cat}/${id}`,
+      {
+        method: "PATCH",
+        body: JSON.stringify(dataToSend2),
+        headers: {
+          "Content-type": "application/json",
+        },
+      }
+    );
     let data2 = await resagain.json();
   }
   // console.log(btn_text);
@@ -203,7 +209,7 @@ const updateActive = async (id, cat, btn_text) => {
 
 //remove Products
 const removeProduct = async (id, cat) => {
-  let res = await fetch(`http://localhost:3000/${cat}/${id}`, {
+  let res = await fetch(`https://diva-mock-server.onrender.com/${cat}/${id}`, {
     method: "DELETE",
   });
   alert("Product Deleted!");
@@ -254,7 +260,7 @@ filter_Prods.onchange = () => {
 const handle_filter = async (query, value) => {
   let active_cat = localStorage.getItem("active_cat");
   let res = await fetch(
-    `http://localhost:3000/${active_cat}?${query}=${value}`
+    `https://diva-mock-server.onrender.com/${active_cat}?${query}=${value}`
   );
   let data = await res.json();
   appendProducts(data, active_cat);
@@ -274,7 +280,7 @@ sort_Prods.onchange = () => {
 const sort_handle = async (query, value) => {
   let active_cat = localStorage.getItem("active_cat");
   let res = await fetch(
-    `http://localhost:3000/${active_cat}?_sort=${query}&_order=${value}`
+    `https://diva-mock-server.onrender.com/${active_cat}?_sort=${query}&_order=${value}`
   );
   let data = await res.json();
   appendProducts(data, active_cat);

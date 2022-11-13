@@ -1,7 +1,7 @@
 // Getting and adding Coupons from Server
 const getCoupons = async () => {
   try {
-    let res = await fetch(`http://localhost:3000/coupons`);
+    let res = await fetch(`https://diva-mock-server.onrender.com/coupons`);
     let data = await res.json();
     couponsAppend(data);
   } catch (err) {}
@@ -70,25 +70,31 @@ const updateStatus = async (id, btn_text) => {
     let dataToSend = {
       status: false,
     };
-    let res = await fetch(`http://localhost:3000/coupons/${id}`, {
-      method: "PATCH",
-      body: JSON.stringify(dataToSend),
-      headers: {
-        "Content-type": "application/json",
-      },
-    });
+    let res = await fetch(
+      `https://diva-mock-server.onrender.com/coupons/${id}`,
+      {
+        method: "PATCH",
+        body: JSON.stringify(dataToSend),
+        headers: {
+          "Content-type": "application/json",
+        },
+      }
+    );
     let data = await res.json();
   } else {
     let dataToSend2 = {
       status: true,
     };
-    let resagain = await fetch(`http://localhost:3000/coupons/${id}`, {
-      method: "PATCH",
-      body: JSON.stringify(dataToSend2),
-      headers: {
-        "Content-type": "application/json",
-      },
-    });
+    let resagain = await fetch(
+      `https://diva-mock-server.onrender.com/coupons/${id}`,
+      {
+        method: "PATCH",
+        body: JSON.stringify(dataToSend2),
+        headers: {
+          "Content-type": "application/json",
+        },
+      }
+    );
     let data2 = await resagain.json();
   }
   // console.log(btn_text);
@@ -96,7 +102,7 @@ const updateStatus = async (id, btn_text) => {
 
 // Remove Coupons
 const removeCoupon = async (id) => {
-  let res = await fetch(`http://localhost:3000/coupons/${id}`, {
+  let res = await fetch(`https://diva-mock-server.onrender.com/coupons/${id}`, {
     method: "DELETE",
   });
   alert("Coupon Remove!");
@@ -110,7 +116,7 @@ searchBtn.onclick = () => {
 };
 
 const search_coupon_data = async (d) => {
-  let res = await fetch(`http://localhost:3000/coupons`);
+  let res = await fetch(`https://diva-mock-server.onrender.com/coupons`);
   let data = await res.json();
   data = data.filter(({ code }) => {
     return code.includes(d);
@@ -138,7 +144,7 @@ add_coupon_btn.onclick = async () => {
       return;
     }
 
-    let res = await fetch(`http://localhost:3000/coupons`, {
+    let res = await fetch(`https://diva-mock-server.onrender.com/coupons`, {
       method: "POST",
       body: JSON.stringify(coupon_to_add),
       headers: {

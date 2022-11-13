@@ -1,6 +1,6 @@
 const Skin_product = async () => {
   try {
-    let res = await fetch(`http://localhost:3000/skincare`);
+    let res = await fetch(`https://diva-mock-server.onrender.com/skincare`);
 
     let data = await res.json();
     console.log(data);
@@ -14,7 +14,7 @@ const Skin_product = async () => {
 const Paginate_Skin_product = async (clicked_button, limit) => {
   try {
     let res = await fetch(
-      `http://localhost:3000/skincare?_page=${clicked_button}&_limit=${limit}`
+      `https://diva-mock-server.onrender.com/skincare?_page=${clicked_button}&_limit=${limit}`
     );
 
     let data = await res.json();
@@ -123,7 +123,7 @@ async function SortByPrice() {
   if (SortValue === "Low") {
     try {
       let resp = await fetch(
-        `http://localhost:3000/skincare?_sort=price&_order=asc`
+        `https://diva-mock-server.onrender.com/skincare?_sort=price&_order=asc`
       );
 
       let data = await resp.json();
@@ -135,7 +135,7 @@ async function SortByPrice() {
   } else if (SortValue === "High") {
     try {
       let res1 = await fetch(
-        `http://localhost:3000/skincare?_sort=price&_order=desc`
+        `https://diva-mock-server.onrender.com/skincare?_sort=price&_order=desc`
       );
 
       let data = await res1.json();
@@ -146,7 +146,9 @@ async function SortByPrice() {
     }
   } else {
     try {
-      let res2 = await fetch(`http://localhost:3000/skincare?_limit=12`);
+      let res2 = await fetch(
+        `https://diva-mock-server.onrender.com/skincare?_limit=12`
+      );
 
       let data = await res2.json();
       // console.log(data)
@@ -170,7 +172,7 @@ async function SortByRate() {
   if (SortRate === "Low") {
     try {
       let resp = await fetch(
-        `http://localhost:3000/skincare?_sort=rating&_order=asc`
+        `https://diva-mock-server.onrender.com/skincare?_sort=rating&_order=asc`
       );
 
       let data = await resp.json();
@@ -182,7 +184,7 @@ async function SortByRate() {
   } else if (SortValue === "High") {
     try {
       let res1 = await fetch(
-        `http://localhost:3000/skincare?_sort=rating&_order=desc`
+        `https://diva-mock-server.onrender.com/skincare?_sort=rating&_order=desc`
       );
 
       let data = await res1.json();
@@ -193,7 +195,9 @@ async function SortByRate() {
     }
   } else {
     try {
-      let res2 = await fetch(`http://localhost:3000/skincare?_limit=12`);
+      let res2 = await fetch(
+        `https://diva-mock-server.onrender.com/skincare?_limit=12`
+      );
 
       let data = await res2.json();
       // console.log(data)
@@ -217,7 +221,7 @@ async function SortByReview() {
   if (SortReview === "Low") {
     try {
       let resp = await fetch(
-        `http://localhost:3000/skincare?_sort=reviews&_order=asc`
+        `https://diva-mock-server.onrender.com/skincare?_sort=reviews&_order=asc`
       );
 
       let data = await resp.json();
@@ -229,7 +233,7 @@ async function SortByReview() {
   } else if (SortValue === "High") {
     try {
       let res1 = await fetch(
-        `http://localhost:3000/skincare?_sort=reviews&_order=desc`
+        `https://diva-mock-server.onrender.com/skincare?_sort=reviews&_order=desc`
       );
 
       let data = await res1.json();
@@ -240,7 +244,9 @@ async function SortByReview() {
     }
   } else {
     try {
-      let res2 = await fetch(`http://localhost:3000/skincare?_limit=12`);
+      let res2 = await fetch(
+        `https://diva-mock-server.onrender.com/skincare?_limit=12`
+      );
 
       let data = await res2.json();
       // console.log(data)
@@ -263,7 +269,7 @@ async function BrandFilter() {
 
   if (brand === "1") {
     try {
-      let resp = await fetch(`http://localhost:3000/skincare`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/skincare`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -280,7 +286,7 @@ async function BrandFilter() {
     }
   } else if (brand === "2") {
     try {
-      let resp = await fetch(`http://localhost:3000/skincare`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/skincare`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -297,7 +303,7 @@ async function BrandFilter() {
     }
   } else if (brand === "3") {
     try {
-      let resp = await fetch(`http://localhost:3000/skincare`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/skincare`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -314,7 +320,7 @@ async function BrandFilter() {
     }
   } else if (brand === "4") {
     try {
-      let resp = await fetch(`http://localhost:3000/skincare`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/skincare`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -331,7 +337,9 @@ async function BrandFilter() {
     }
   } else {
     try {
-      let res2 = await fetch(`http://localhost:3000/skincare?_limit=12`);
+      let res2 = await fetch(
+        `https://diva-mock-server.onrender.com/skincare?_limit=12`
+      );
 
       let data = await res2.json();
       // console.log(data)
@@ -355,7 +363,7 @@ async function BrandPriceFilter() {
 
   if (brandPrice === "1") {
     try {
-      let resp = await fetch(`http://localhost:3000/skincare`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/skincare`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -371,7 +379,7 @@ async function BrandPriceFilter() {
     }
   } else if (brandPrice === "2") {
     try {
-      let resp = await fetch(`http://localhost:3000/skincare`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/skincare`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -387,7 +395,7 @@ async function BrandPriceFilter() {
     }
   } else if (brandPrice === "3") {
     try {
-      let resp = await fetch(`http://localhost:3000/skincare`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/skincare`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -403,7 +411,7 @@ async function BrandPriceFilter() {
     }
   } else if (brandPrice === "4") {
     try {
-      let resp = await fetch(`http://localhost:3000/skincare`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/skincare`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -419,7 +427,9 @@ async function BrandPriceFilter() {
     }
   } else {
     try {
-      let res2 = await fetch(`http://localhost:3000/skincare?_limit=12`);
+      let res2 = await fetch(
+        `https://diva-mock-server.onrender.com/skincare?_limit=12`
+      );
 
       let data = await res2.json();
       // console.log(data)

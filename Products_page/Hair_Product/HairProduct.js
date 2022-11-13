@@ -1,6 +1,6 @@
 const Hair_product = async () => {
   try {
-    let res = await fetch(`http://localhost:3000/hair`);
+    let res = await fetch(`https://diva-mock-server.onrender.com/hair`);
 
     let data = await res.json();
     console.log(data);
@@ -20,7 +20,7 @@ const Hair_product = async () => {
 const Paginate_Hair_product = async (clicked_button, limit) => {
   try {
     let res = await fetch(
-      `http://localhost:3000/hair?_page=${clicked_button}&_limit=${limit}`
+      `https://diva-mock-server.onrender.com/hair?_page=${clicked_button}&_limit=${limit}`
     );
 
     let data = await res.json();
@@ -126,7 +126,7 @@ async function SortByPrice() {
   if (SortValue === "Low") {
     try {
       let resp = await fetch(
-        `http://localhost:3000/hair?_sort=price&_order=asc`
+        `https://diva-mock-server.onrender.com/hair?_sort=price&_order=asc`
       );
 
       let data = await resp.json();
@@ -138,7 +138,7 @@ async function SortByPrice() {
   } else if (SortValue === "High") {
     try {
       let res1 = await fetch(
-        `http://localhost:3000/hair?_sort=price&_order=desc`
+        `https://diva-mock-server.onrender.com/hair?_sort=price&_order=desc`
       );
 
       let data = await res1.json();
@@ -149,7 +149,9 @@ async function SortByPrice() {
     }
   } else {
     try {
-      let res2 = await fetch(`http://localhost:3000/hair?_limit=12`);
+      let res2 = await fetch(
+        `https://diva-mock-server.onrender.com/hair?_limit=12`
+      );
 
       let data = await res2.json();
       // console.log(data)
@@ -173,7 +175,7 @@ async function SortByRate() {
   if (SortRate === "Low") {
     try {
       let resp = await fetch(
-        `http://localhost:3000/hair?_sort=rating&_order=asc`
+        `https://diva-mock-server.onrender.com/hair?_sort=rating&_order=asc`
       );
 
       let data = await resp.json();
@@ -185,7 +187,7 @@ async function SortByRate() {
   } else if (SortRate === "High") {
     try {
       let res1 = await fetch(
-        `http://localhost:3000/hair?_sort=rating&_order=desc`
+        `https://diva-mock-server.onrender.com/hair?_sort=rating&_order=desc`
       );
 
       let data = await res1.json();
@@ -196,7 +198,9 @@ async function SortByRate() {
     }
   } else {
     try {
-      let res2 = await fetch(`http://localhost:3000/hair?_limit=12`);
+      let res2 = await fetch(
+        `https://diva-mock-server.onrender.com/hair?_limit=12`
+      );
 
       let data = await res2.json();
       // console.log(data)
@@ -220,7 +224,7 @@ async function SortByReview() {
   if (SortReview === "Low") {
     try {
       let resp = await fetch(
-        `http://localhost:3000/hair?_sort=reviews&_order=asc`
+        `https://diva-mock-server.onrender.com/hair?_sort=reviews&_order=asc`
       );
 
       let data = await resp.json();
@@ -232,7 +236,7 @@ async function SortByReview() {
   } else if (SortReview === "High") {
     try {
       let res1 = await fetch(
-        `http://localhost:3000/hair?_sort=reviews&_order=desc`
+        `https://diva-mock-server.onrender.com/hair?_sort=reviews&_order=desc`
       );
 
       let data = await res1.json();
@@ -243,7 +247,9 @@ async function SortByReview() {
     }
   } else {
     try {
-      let res2 = await fetch(`http://localhost:3000/hair?_limit=12`);
+      let res2 = await fetch(
+        `https://diva-mock-server.onrender.com/hair?_limit=12`
+      );
 
       let data = await res2.json();
       // console.log(data)
@@ -266,7 +272,7 @@ async function BrandFilter() {
 
   if (brand === "1") {
     try {
-      let resp = await fetch(`http://localhost:3000/hair`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/hair`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -283,7 +289,7 @@ async function BrandFilter() {
     }
   } else if (brand === "2") {
     try {
-      let resp = await fetch(`http://localhost:3000/hair`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/hair`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -300,7 +306,7 @@ async function BrandFilter() {
     }
   } else if (brand === "3") {
     try {
-      let resp = await fetch(`http://localhost:3000/hair`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/hair`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -317,7 +323,7 @@ async function BrandFilter() {
     }
   } else if (brand === "4") {
     try {
-      let resp = await fetch(`http://localhost:3000/hair`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/hair`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -334,7 +340,7 @@ async function BrandFilter() {
     }
   } else if (brand === "5") {
     try {
-      let resp = await fetch(`http://localhost:3000/hair`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/hair`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -351,7 +357,7 @@ async function BrandFilter() {
     }
   } else if (brand === "6") {
     try {
-      let resp = await fetch(`http://localhost:3000/hair`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/hair`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -368,7 +374,7 @@ async function BrandFilter() {
     }
   } else if (brand === "7") {
     try {
-      let resp = await fetch(`http://localhost:3000/hair`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/hair`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -385,7 +391,7 @@ async function BrandFilter() {
     }
   } else if (brand === "8") {
     try {
-      let resp = await fetch(`http://localhost:3000/hair`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/hair`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -402,7 +408,7 @@ async function BrandFilter() {
     }
   } else if (brand === "9") {
     try {
-      let resp = await fetch(`http://localhost:3000/hair`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/hair`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -419,7 +425,7 @@ async function BrandFilter() {
     }
   } else if (brand === "10") {
     try {
-      let resp = await fetch(`http://localhost:3000/hair`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/hair`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -436,7 +442,7 @@ async function BrandFilter() {
     }
   } else if (brand === "11") {
     try {
-      let resp = await fetch(`http://localhost:3000/hair`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/hair`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -453,7 +459,7 @@ async function BrandFilter() {
     }
   } else if (brand === "12") {
     try {
-      let resp = await fetch(`http://localhost:3000/hair`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/hair`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -470,7 +476,9 @@ async function BrandFilter() {
     }
   } else {
     try {
-      let res2 = await fetch(`http://localhost:3000/hair?_limit=12`);
+      let res2 = await fetch(
+        `https://diva-mock-server.onrender.com/hair?_limit=12`
+      );
 
       let data = await res2.json();
       // console.log(data)
@@ -494,7 +502,7 @@ async function BrandPriceFilter() {
 
   if (brandPrice === "1") {
     try {
-      let resp = await fetch(`http://localhost:3000/hair`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/hair`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -510,7 +518,7 @@ async function BrandPriceFilter() {
     }
   } else if (brandPrice === "2") {
     try {
-      let resp = await fetch(`http://localhost:3000/hair`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/hair`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -526,7 +534,7 @@ async function BrandPriceFilter() {
     }
   } else if (brandPrice === "3") {
     try {
-      let resp = await fetch(`http://localhost:3000/hair`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/hair`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -542,7 +550,7 @@ async function BrandPriceFilter() {
     }
   } else if (brandPrice === "4") {
     try {
-      let resp = await fetch(`http://localhost:3000/hair`);
+      let resp = await fetch(`https://diva-mock-server.onrender.com/hair`);
 
       let data = await resp.json();
       //  console.log(data)
@@ -558,7 +566,9 @@ async function BrandPriceFilter() {
     }
   } else {
     try {
-      let res2 = await fetch(`http://localhost:3000/hair?_limit=12`);
+      let res2 = await fetch(
+        `https://diva-mock-server.onrender.com/hair?_limit=12`
+      );
 
       let data = await res2.json();
       // console.log(data)

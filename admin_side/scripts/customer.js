@@ -1,5 +1,7 @@
 const getCustomerData = async () => {
-  let res = await fetch(`http://localhost:3000/user_login_details`);
+  let res = await fetch(
+    `https://diva-mock-server.onrender.com/user_login_details`
+  );
   let data = await res.json();
   appendCustomerData(data);
 };
@@ -48,7 +50,9 @@ searchBtn.onclick = () => {
 };
 
 const search_user_data = async (d) => {
-  let res = await fetch(`http://localhost:3000/user_login_details`);
+  let res = await fetch(
+    `https://diva-mock-server.onrender.com/user_login_details`
+  );
   let data = await res.json();
   data = data.filter(({ firstname }) => {
     return firstname.includes(d);
@@ -59,7 +63,10 @@ const search_user_data = async (d) => {
 //delete User Details
 
 const delete_user_data = async (id) => {
-  let res = await fetch(`http://localhost:3000/user_login_details/${id}`, {
-    method: "DELETE",
-  });
+  let res = await fetch(
+    `https://diva-mock-server.onrender.com/user_login_details/${id}`,
+    {
+      method: "DELETE",
+    }
+  );
 };

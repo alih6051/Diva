@@ -45,7 +45,7 @@ addNewProducts.onclick = async () => {
     description: ProdDescription,
   };
 
-  let res = await fetch(`http://localhost:3000/${category}`, {
+  let res = await fetch(`https://diva-mock-server.onrender.com/${category}`, {
     method: "POST",
     body: JSON.stringify(dataToSend),
     headers: {

@@ -23,13 +23,16 @@ addNewUser.onclick = async () => {
     phone: user_phone,
     name: user_name,
   };
-  let res = await fetch(`http://localhost:3000/user_login_details`, {
-    method: "POST",
-    body: JSON.stringify(dataToUser),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
+  let res = await fetch(
+    `https://diva-mock-server.onrender.com/user_login_details`,
+    {
+      method: "POST",
+      body: JSON.stringify(dataToUser),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+  );
   firstDiv.style.display = "block";
   thirdDiv.style.display = "none";
   user_email.value = dataToUser.email;
@@ -39,7 +42,9 @@ let user_data;
 
 const getUsers = async () => {
   try {
-    let res = await fetch(`http://localhost:3000/user_login_details`);
+    let res = await fetch(
+      `https://diva-mock-server.onrender.com/user_login_details`
+    );
     let data = await res.json();
     user_data = data;
   } catch (err) {

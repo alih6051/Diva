@@ -5,7 +5,7 @@ let admin_users;
 
 const getAdminUsers = async () => {
   try {
-    let res = await fetch(`http://localhost:3000/admin_users`);
+    let res = await fetch(`https://diva-mock-server.onrender.com/admin_users`);
     let data = await res.json();
     admin_users = data;
     console.log(admin_users);
