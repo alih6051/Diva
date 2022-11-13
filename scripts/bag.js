@@ -61,6 +61,7 @@ function cartData(data) {
   totalMrp.innerText = total;
   finalMrp.innerText = total;
   payAmount.innerText = total;
+  sessionStorage.setItem("totalCartValue", total);
 }
 cartData(bag);
 
@@ -77,3 +78,8 @@ const handleItemRemove = (i) => {
   cartData(bag);
 };
 //*************************************************************************** */
+
+let Proceed = document.getElementById("Proceed");
+Proceed.addEventListener("click", function () {
+  window.location = "./checkout.html";
+});
