@@ -1,10 +1,11 @@
 import { isUser } from "./isUser.js";
 let firstDiv = document.getElementById("firstDiv");
 let secondDiv = document.getElementById("secondDiv");
+let thirdDiv = document.getElementById("thirdDiv");
 let LoginBtn = document.getElementById("LoginId");
 let registerBtn = document.getElementById("registerId");
 let emailProcess = document.getElementById("proceedToPass");
-let user_email = document.getElementById("emailId").value;
+let user_email = document.getElementById("emailId");
 let login_password = document.getElementById("login_password");
 
 let addNewUser = document.getElementById("register_User");
@@ -29,7 +30,9 @@ addNewUser.onclick = async () => {
       "Content-Type": "application/json",
     },
   });
-  redirectIndex();
+  firstDiv.style.display = "block";
+  thirdDiv.style.display = "none";
+  user_email.value = dataToUser.email;
 };
 
 let user_data;
