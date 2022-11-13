@@ -82,15 +82,21 @@ function cartData(data) {
 
     let hr = document.createElement("hr");
     hr.setAttribute("class", "mt-2");
+    let quantity = document.createElement("select");
+    quantity.setAttribute("class", "col-5 text-start");
+    quantity.innerHTML = `<option value='1'>Quantity 1</option><option value='2'>Quantity 2</option><option value='3'>Quantity 3</option><option value='4'>Quantity 4</option><option value='5'>Quantity 5</option>`;
+    quantity.value = `${data.quant[i]}`;
+    quantity.onchange = (e) => {
+      handleQuantity(i, e.target.value);
+    };
 
     let price = document.createElement("b");
-    price.setAttribute("class", "col-12 text-end");
+    price.setAttribute("class", "col-7 text-end");
     let total_price = el.price * data.quant[i];
     price.innerText = "₹" + total_price;
-    total += el.price;
-    div2.append(image, name, icon, hr, price);
+    total += total_price;
+    div2.append(image, name, icon, hr, quantity, price);
     div.append(div2);
-
     let div3 = document.createElement("div");
     div3.setAttribute("class", "row");
     container.append(div);
@@ -98,8 +104,15 @@ function cartData(data) {
   totalMrp.innerText = total;
   finalMrp.innerText = total;
   payAmount.innerText = total;
+  sessionStorage.setItem("totalCartValue", total);
 }
 cartData(bag);
+
+const handleQuantity = (i, val) => {
+  bag.quant[i] = +val;
+  localStorage.setItem("ADD_TO_CART", JSON.stringify(bag));
+  cartData(bag);
+};
 
 const handleItemRemove = (i) => {
   bag.items.splice(i, 1);
@@ -108,6 +121,11 @@ const handleItemRemove = (i) => {
   cartData(bag);
 };
 //*************************************************************************** */
+
+let Proceed = document.getElementById("Proceed");
+Proceed.addEventListener("click", function () {
+  window.location = "./checkout.html";
+});
 
 $(document).ready(function () {
   $(".dropdown").hover(

@@ -66,9 +66,6 @@ emailProcess.onclick = () => {
 LoginBtn.addEventListener("click", function () {
   if (user_data.password == login_password.value) {
     alert("Login Successfully !");
-    // const toastLiveExample = document.getElementById("logintoast");
-    // const toast = new bootstrap.Toast(toastLiveExample);
-    // toast.show();
     sessionStorage.setItem("current_user", JSON.stringify(user_data));
     location.href = "./index.html";
   } else {

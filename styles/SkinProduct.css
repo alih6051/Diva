@@ -31,6 +31,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   cursor: pointer;
+  text-align: center;
 }
 
 .Pro_Name {
@@ -71,9 +72,9 @@ body {
 }
 
 /*  */
-* {
+/* * {
   text-align: center;
-}
+} */
 /*  */
 
 .FooterBtn {
