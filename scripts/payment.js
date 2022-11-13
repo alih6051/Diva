@@ -1,7 +1,9 @@
 let paymentDone = document.getElementById("paymentDone");
 paymentDone.addEventListener("click", function () {
   localStorage.removeItem("ADD_TO_CART");
-  window.location = "./index.html";
+  prompt("Enter OTP");
+  alert("Order Placed Successfully!");
+  location.href = "./index.html";
 });
 
 let total = sessionStorage.getItem("totalCartValue") || 0;

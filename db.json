@@ -635,7 +635,7 @@
       "reviews": "2781",
       "price": 392,
       "brandName": "Marc Jacobs Fragrances",
-      "quantity": 50,
+      "quantity": 100,
       "description": "Marc Jacobs Fragrances - Daisy"
     },
     {
@@ -2187,7 +2187,6 @@
       "quantity": 50,
       "description": "TULA Skincare - Let It Glow Essential Hydration Trio"
     },
-
     {
       "active": true,
       "id": "P436005",
@@ -2488,7 +2487,6 @@
       "quantity": 50,
       "description": "Atelier Cologne - Clémentine California Pure Perfume Limited Edition"
     },
-
     {
       "active": true,
       "id": "P479847",
