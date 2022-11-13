@@ -107,8 +107,15 @@ $(document).ready(function () {
 let sign_btn = document.getElementById("sign_btn");
 let account_div = document.getElementById("account_div");
 let login_user_name = document.getElementById("login_user_name");
+let logoutFun = document.getElementById("logoutFun");
 
 let current_user = JSON.parse(sessionStorage.getItem("current_user"));
+logoutFun.addEventListener("click", function () {
+  sessionStorage.removeItem("current_user");
+  location.reload();
+  sign_btn.style.display = "block";
+  account_div.style.display = "none";
+});
 
 if (current_user) {
   sign_btn.style.display = "none";

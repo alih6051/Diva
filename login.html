@@ -11,6 +11,7 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
     <div class="col-3 mx-auto mt-5">
@@ -156,13 +157,7 @@
         <div id="secondDiv" class="text-center" style="display: none">
           <h3>LOGIN</h3>
           <hr />
-          <input
-            type="text"
-            class="form-control"
-            value=""
-            disabled
-            id="emailDisabled"
-          />
+          <img class="product-image" src="./assets/logo.png" alt="" />
           <p class="mt-4">
             Welcome back,<br />
             Please enter your password to continue
@@ -178,13 +173,7 @@
         <div id="thirdDiv" class="text-center" style="display: none">
           <h3>REGISTER</h3>
           <hr />
-          <input
-            type="text"
-            class="form-control"
-            value=""
-            disabled
-            id="disabledEmail"
-          />
+          <img class="product-image" src="./assets/logo.png" alt="" />
           <p class="mt-4">Register to Earn 2000 Reward Points!<br /></p>
           <input
             type="text"
@@ -215,6 +204,23 @@
             Register
           </button>
         </div>
+      </div>
+    </div>
+    <div
+      class="toast align-items-center text-bg-primary border-0"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+      id="logintoast"
+    >
+      <div class="d-flex">
+        <div class="toast-body">Hello, world! This is a toast message.</div>
+        <button
+          type="button"
+          class="btn-close btn-close-white me-2 m-auto"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+        ></button>
       </div>
     </div>
 

@@ -54,7 +54,7 @@ emailProcess.onclick = () => {
     saveData();
   } else {
     let user_email = document.getElementById("emailId").value;
-    document.getElementById("emailDisabled").value = user_email;
+    document.getElementById("user_mail").value = user_email;
     firstDiv.style.display = "none";
     thirdDiv.style.display = "block";
   }
@@ -63,6 +63,9 @@ emailProcess.onclick = () => {
 LoginBtn.addEventListener("click", function () {
   if (user_data.password == login_password.value) {
     alert("Login Successfully !");
+    // const toastLiveExample = document.getElementById("logintoast");
+    // const toast = new bootstrap.Toast(toastLiveExample);
+    // toast.show();
     sessionStorage.setItem("current_user", JSON.stringify(user_data));
     location.href = "./index.html";
   } else {

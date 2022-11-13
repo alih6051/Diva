@@ -20,4 +20,9 @@ body {
 .product-content {
   height: 125px;
 }
-
+/* .user_name {
+  display: inline-flex !important;
+} */
+#logoutMenu {
+  top: 40px;
+}

@@ -282,12 +282,18 @@ const navbarTop = () => {
           Sign In
         </button>
 
-        <div id="account_div" style="display: none";>   
-          <span class="ps-3 pt-1"><img src="./resouces/images/user.png" alt="" height="20px;"></span>
-          <span id="login_user_name" class="pt-2 ps-1">Account</span>
-        </div> 
+        <div id="account_div" class="user_name dropdown dropstart" style="display: none"; data-bs-toggle="dropdown" aria-expanded="false">   
+        <div style="display:flex;"> 
+        <span class="ps-3 pt-1 "><img src="./resouces/images/user.png" alt="" height="20px;"></span>
+          <span id="login_user_name" class="pt-2 ps-1 dropdown-toggle">Account</span>
+          <ul class="dropdown-menu" id="logoutMenu">
+          <li><a class="dropdown-item" href="#" id="logoutFun">Logout</a></li>
+         </ul>
+         </div>
+          </div> 
          
-        <div style="border: 1px solid red";>
+         
+        <div>
           <span class="position-absolute start-97 translate-middle badge rounded-pill bg-danger" id="cartCount"> 
            0
           </span>
