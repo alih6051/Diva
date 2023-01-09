@@ -1,11 +1,11 @@
 
 # Overstock - Clone
 
-Overstock.com, Inc. is an American internet retailer selling primarily furniture headquartered in Midvale, Utah, near Salt Lake City. Businessman Patrick M. 
+Mytheresa is an online shopping destination for men and women's luxury clothing, bags, shoes, and accessories. 
 
 The project has been completed within the duration of 5 days. I learnt a lot during the course of this project.
 
-Original website link: https://www.overstock.com
+Original website link: https://www.mytheresa.com/int_en
 
 Link of our deployed project: https://boring-wine-45.vercel.app/
 ## Tech Stack and Features
