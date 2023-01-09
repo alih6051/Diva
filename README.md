@@ -1,9 +1,9 @@
 
-# Mytheresa - Clone
+# Diva - A Clone of Nykaa.com
 
-Mytheresa is an online shopping destination for men and women's luxury clothing, bags, shoes, and accessories. 
+Diva is a clone of Nykaa.com. It sells beauty wellness and fashion products. The brand specialises in facilitating an extensive collection of cosmetics, skincare, haircare, fragrances, bath and body, luxury as well as wellness products for both women and men.
 
-The project has been completed within the duration of 5 days. I learnt a lot during the course of this project.
+It was a collaborative project made by 3 members Executed in 5 days. Team lead- Mohd Hasan Ali 1: Rohit Member-1: Masum Raja Member-3: Sachin Kumar
 
 Original website link: https://www.mytheresa.com/int_en
 
