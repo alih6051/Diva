@@ -22,24 +22,27 @@ Link of our deployed project: https://diva-ecom.netlify.app
 
 ## Pages and features
 - Home Page:- Navigation Bar, Footer.
+- Admin Page :- Admin dashboard.
 - Account Page:- User authentication using local storage.
 - Product Page:- It has sorting & filtering functionality.
 - Cart Page :- Dyanamic cart
-- Admin Page :- Admin Panel
 
 ## Glimpse and screenshots of our cloned website:
 
 Home Page
 ![App Screenshot](https://iili.io/H7oNWYJ.png)
 
+Admin Page
+![App Screenshot](https://iili.io/H7oZqX9.png)
+
 Product Page
-![App Screenshot](https://i.ibb.co/p1dRn7d/product.png)
+![App Screenshot](https://iili.io/H7xFoZb.png)
 
 Account Page
-![App Screenshot](https://i.ibb.co/vqDXyZb/acc.png)
+![App Screenshot](https://iili.io/H7xnGPs.png)
 
 Cart Page
-![App Screenshot](https://i.ibb.co/jMbsKTc/cart.png)
+![App Screenshot](https://iili.io/H7xAhBI.png)
 
 Checkout Page
-![App Screenshot](https://i.ibb.co/qpvz2TF/check.png)
+![App Screenshot](https://iili.io/H7xYyNa.png)
