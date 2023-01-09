@@ -7,33 +7,31 @@ The project has been completed within the duration of 5 days. I learnt a lot dur
 
 Original website link: https://www.mytheresa.com/int_en
 
-Link of our deployed project: https://boring-wine-45.vercel.app/
+Link of our deployed project: https://mytheresa-ecom.netlify.app
 ## Tech Stack and Features
 
-- React
-- Json-Server
-- Chakra UI
-- Styled Components
-- Protected Routes(only accesible after login)
-- Responsiveness
+- HTML
+- CSS
+- Javascript
 
+## Pages and features
+- Home Page:- Navigation Bar, Footer.
+- Sign-In:- User authentication using local storage.
+- Product Page:- It has sorting & filtering functionality.
 
 ## Glimpse and screenshots of our cloned website:
 
-Mobile View
-![App Screenshot](https://i.ibb.co/sC0r9fR/Screenshot-2022-12-20-13-26-53-738-com-android-chrome.jpg)
-
 Home Page
-![App Screenshot](https://i.ibb.co/xqxHXtr/Home.png)
+![App Screenshot](https://i.ibb.co/nCGgKcx/home.png)
 
 Product Page
-![App Screenshot](https://i.ibb.co/1rLZBSC/Product.png)
+![App Screenshot](https://i.ibb.co/p1dRn7d/product.png)
 
 Account Page
-![App Screenshot](https://i.ibb.co/zF9tmW2/acc.png)
+![App Screenshot](https://i.ibb.co/vqDXyZb/acc.png)
 
 Cart Page
-![App Screenshot](https://i.ibb.co/LrnShrJ/cart.png)
+![App Screenshot](https://i.ibb.co/jMbsKTc/cart.png)
 
 Checkout Page
-![App Screenshot](https://i.ibb.co/g90BYPn/checkout.png)
+![App Screenshot](https://i.ibb.co/qpvz2TF/check.png)
